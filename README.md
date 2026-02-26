@@ -42,9 +42,10 @@ Immi-OS is orchestrated primarily via Make.com and utilizes a centralized Airtab
 * **The "Nurture" Path:** Leads not immediately qualified automatically enter an educational email sequence (e.g., "How to Improve Your CRS Score") to keep them engaged without consultant effort. 
 * **The "Disqualified" Path:** Polite, automated rejection with resources on general eligibility, protecting the consultant's time. 
 
-![Bland.ai Conversational Pathway](./assets/Bland-AI_conversational_pathway.png)
+<img src="./Assets/Bland-AI_conversational_pathway.png" width="100%" alt="Bland AI Pathway">
 
 </details>
+
 
 <details>
 <summary><b>Module C: Market Watchdogs (News & Reactivation)</b></summary>
@@ -61,7 +62,7 @@ Immi-OS is orchestrated primarily via Make.com and utilizes a centralized Airtab
 * **Status Inquiries:** Clients asking "What is my application status?" receive instant, accurate automated replies drawn from the database. 
 * **Milestone Celebrations:** When an application status changes to "Approved," the system generates and sends a personalized HeyGen Video Avatar message from the consultant congratulating the client. 
 
-![Make.com Customer Support Workflow](./assets/Make - Customer_Support_Bot_for_existing_client.png)
+<img src="./Assets/Make - Customer_Support_Bot_for_existing_client.png" width="100%" alt="Make.com Support Workflow">
 
 </details>
 
