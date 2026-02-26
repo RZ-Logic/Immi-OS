@@ -32,15 +32,15 @@ Immi-OS is orchestrated primarily via Make.com and utilizes a centralized Airtab
 <details>
 <summary><b>Module A: Multi-Channel Intake & Screening</b></summary>
 
-* **Omni-Channel Capture:** Aggregates leads from both Web Forms and Incoming Emails into a centralized Airtable database.
+* **Omni-Channel Capture:** Aggregates incoming leads via Webhook (from Softr/Webflow forms) and Mailhook (parsing raw email bodies). Data is instantly sanitized, formatted, and pushed to a centralized Airtable Leads table.
 
-* **AI Voice Screening (Bland.ai):** An AI agent calls new leads within 2 minutes to verify eligibility.
+* **AI Voice Screening (Bland.ai):** An automated trigger fires a POST request to the Bland.ai API within 120 seconds of lead capture. The AI agent, armed with the lead's name and native language, conducts a dynamic qualification interview to verify eligibility constraints (Age, Education, Job Offer).
 
-* **Transcript Analysis & Dynamic Tagging:** Based on the conversation, the AI analyzes the transcript and tags the lead in Airtable:
+* **Transcript Analysis & Dynamic Tagging:** Upon call completion, the webhook payload (containing the full transcript) is routed through GPT-4.0 via Make.com. The LLM extracts key data points and updates the Airtable record with a definitive status tag:
 
-    * *VIP:* Immediate eligibility and budget (Triggers Consultant alert).
-    * *Nurture:* Eligible in future but needs improvement (e.g., low language score). 
-    * *Disqualified:* No viable pathway currently.
+    * *VIP:* Lead possesses an immediate pathway and budget. Triggers an urgent Slack ping to the Senior Partner.
+    * *Nurture:* Lead lacks a specific requirement (e.g., IELTS score is 0.5 too low). Routed to targeted education. 
+    * *Disqualified:* No mathematical pathway exists under current IRPA guidelines.
   
 </details>
 
@@ -49,9 +49,11 @@ Immi-OS is orchestrated primarily via Make.com and utilizes a centralized Airtab
 <details>
 <summary><b>Module B: Intelligent Nurture & Education</b></summary>
 
-* **The "Nurture" Path:** Leads not immediately qualified automatically enter an educational email sequence (e.g., "How to Improve Your CRS Score") to keep them engaged without consultant effort.
+* **Conditional Logic Routing:** The system doesn't just send generic newsletters. Make.com reads the exact "missing variable" identified by GPT-4.0 in Module A and routes the lead into a highly specific drip sequence
 
-* **The "Disqualified" Path:** Polite, automated rejection with resources on general eligibility, protecting the consultant's time.
+* **The "Nurture" Path:** If a lead needs a higher language score, they receive automated IELTS prep resources. If they need a job, they receive Canadian resume templates. This keeps the firm top-of-mind while the lead improves their profile, requiring zero consultant hours.
+
+* **The "Disqualified" Path:** The system generates a polite, personalized rejection email explaining exactly why they do not qualify, attaching general resources. This protects the firm's brand reputation while completely shielding the consultant from time-wasting follow-ups.
 
 
 <img src="./Assets/Bland-AI_conversational_pathway.png" width="100%" alt="Bland AI Pathway">
@@ -65,11 +67,11 @@ Immi-OS is orchestrated primarily via Make.com and utilizes a centralized Airtab
 
 * **Real-Time Monitoring:** Custom automations scrape official immigration news and policy updates.
   
-* **AI Analysis:** OpenAI analyzes each news update to assign a Priority Level and categorize the impact (e.g., "CRS Score Drop," "New STEM Draw").
+* **Heuristic AI Analysis:** OpenAI analyzes each news update to assign a Priority Level and categorize the impact (e.g., "CRS Score Drop," "New STEM Draw").
 
-* **Active Reactivation Logic:** When significant news breaks (e.g., a score drop), the system queries the "Sleeping" client database to find leads who are *now* eligible.
+* **Active Reactivation Logic (The Database Query):** If the news is positive, Make.com triggers a search within the "Sleeping Leads" Airtable view, querying for profiles that mathematically match the new, lowered criteria.
    
-* **The Wake-Up Trigger:** Eligible leads immediately receive an Email AND a Bland.ai Call to wake them up: *"Good news, the requirements just changed and you are now eligible."*
+* **The Wake-Up Trigger:** Matches immediately trigger a multi-channel sequence: an urgent Email AND a personalized Bland.ai outbound call stating, *"Good news, the IRCC requirements just changed and your profile is now eligible for submission."*
   
 </details>
 
@@ -78,9 +80,11 @@ Immi-OS is orchestrated primarily via Make.com and utilizes a centralized Airtab
 <details>
 <summary><b>Module D: Automated Customer Service (CS)</b></summary>
 
-* **Status Inquiries:** Clients asking "What is my application status?" receive instant, accurate automated replies drawn from the database.
+* **Intent Recognition Routing:** When an existing client sends an email, Make.com routes the text to OpenAI to classify the intent (e.g., Status Update, Document Missing, General Question).
+
+* **Status Inquiries:** For status inquiries, the system searches the client's specific Airtable record, extracts the current stage (e.g., "Awaiting Biometrics"), and drafts a highly accurate, personalized response.
   
-* **Milestone Celebrations:** When an application status changes to "Approved," the system generates and sends a personalized HeyGen Video Avatar message from the consultant congratulating the client.
+* **Milestone Celebrations (HeyGen API):** When a file status shifts to "Approved," Make.com fires a webhook to HeyGen. It passes the client's name and visa type as variables to render a photorealistic Video Avatar of the consultant congratulating them, creating a premium client experience at zero marginal time cost.
   
 
 <img src="./Assets/Make - Customer_Support_Bot_for_existing_client.png" width="100%" alt="Make.com Support Workflow">
@@ -109,11 +113,11 @@ Immi-OS is orchestrated primarily via Make.com and utilizes a centralized Airtab
 <details>
 <summary><b>Module F: AI Legal Drafting Assistant</b></summary>
 
-* **The Problem:** Consultants spend 1-2 hours writing "Submission Letters" for every case.
+* **The Production Bottleneck:** Legal drafting (Study Plans, Submission Letters) traditionally consumes 1-2 hours of deep work per client.
   
-* **The Solution:** Immi-OS uses structured prompt chaining to generate the initial draft of legal arguments (e.g., Study Plans, Employment Reference Letters) directly from intake data.
+* **Structured Prompt Chaining:** Immi-OS utilizes a multi-step GPT-5.2 Pro architecture. First, it extracts all factual data from the client's intake forms. Next, it applies IRPA-compliant reasoning to structure the argument. Finally, it drafts the narrative.
   
-* **Impact:** Reduces drafting time by 80%, allowing the consultant to focus solely on final review and strategy.
+* **Output & Impact:** The system generates a highly formatted, 80% complete first draft directly into a Google Doc, allowing the consultant to bypass the "blank page" and focus strictly on high-level legal strategy and final review.
   
 </details>
 
@@ -122,11 +126,11 @@ Immi-OS is orchestrated primarily via Make.com and utilizes a centralized Airtab
 <details>
 <summary><b>Module G: AI Visa Interview Simulator</b></summary>
 
-* **The Feature:** A specialized Voice AI agent configured with a "Strict Visa Officer" persona.
+* **The Feature:** A specialized Bland.ai voice agent configured with a strict, low-latency "Canadian Visa Officer" persona, designed to interrupt and pressure-test the client.
   
-* **The Workflow:** The system calls the client before their real interview and conducts a 20-minute aggressive roleplay simulation.
+* **The Workflow:** Prior to a real embassy interview, the system calls the client and conducts a dynamic 20-minute roleplay simulation based on their specific visa category.
   
-* **The Output:** The consultant receives a recording and an AI-generated "Risk Scorecard" (e.g., *"Client stuttered on financial questions"*), replacing hours of manual coaching time.
+* **The JSON Risk Scorecard:** Post-call, the transcript is analyzed to generate a strict JSON output evaluating the client's performance (e.g., flagged hesitation on financial questions, contradictory timeline statements). This provides the consultant with targeted coaching data, saving hours of manual prep time.
   
 </details>
 
@@ -135,11 +139,11 @@ Immi-OS is orchestrated primarily via Make.com and utilizes a centralized Airtab
 <details>
 <summary><b>Module H: Smart Financial Compliance</b></summary>
 
-* **Automated Collections:** Integrates case progress with billing logic. When a file is marked "Ready for Submission," the system checks the balance due.
+* **State-Locked Progression:** System progression is intrinsically tied to billing status. When a consultant marks a file as "Ready for Submission" in Airtable, a webhook checks the client's financial balance.
   
-* **The Guardrail:** If a balance exists, the system automatically sends a Stripe invoice and *locks* the file from submission until the payment webhook confirms success.
+* **Automated Collections:** If an outstanding balance is detected, Make.com automatically generates and issues a Stripe invoice to the client.
   
-* **Impact:** Eliminates accounts receivable aging and ensures 100% payment compliance without uncomfortable money conversations.
+* **The Guardrail:** The system locks the file from moving to the final "Submitted" stage until the payment_intent.succeeded webhook is received from Stripe, guaranteeing 100% payment compliance and eliminating awkward consultant-client money conversations.
   
 </details>
 
@@ -148,11 +152,11 @@ Immi-OS is orchestrated primarily via Make.com and utilizes a centralized Airtab
 <details>
 <summary><b>Module I: System Governance (The "Shadow Ledger" & Failsafes)</b></summary>
 
-* **The Problem:** Standard automations are "black boxes." If a third-party API goes down, the automation silently fails, resulting in lost leads and broken client experiences.
+* **The Problem with Black Boxes:** Standard automations fail silently during API timeouts, resulting in lost data and broken client journeys.
   
-* **The Shadow Ledger:** A universal logging system engineered across all Make.com scenarios.  Every single execution, whether a success or failure, is recorded into a centralized, immutable Airtable database. This tracks the exact payload, the AI prompt, the generated output, and the precise timestamp.
+* **The Immutable Shadow Ledger:** A universal logging system engineered across all Make.com scenarios.  Every single execution, whether a success or failure, is recorded into a centralized, immutable Airtable database. This tracks the exact payload, the AI prompt, the generated output, and the precise timestamp.
   
-* **Failsafe Routing & Redundancy:** Engineered dedicated error-handling pathways (Break, Commit, Ignore) within Make.com. If an API call fails, the system automatically intercepts the error, bypasses the crash, logs the exact RuntimeError into the Shadow Ledger, and triggers an immediate Slack alert for manual review.
+* **Failsafe Routing & Redundancy:** Implemented advanced Make.com error handlers (Break, Commit, Ignore, Resume). If a third-party API crashes, the system intercepts the RuntimeError, prevents data loss, securely parks the payload, and triggers an urgent Slack alert containing the error trace for manual resolution.
   
 * **Impact:** Achieves true enterprise-grade reliability, ensures zero data loss during API outages, and maintains a 100% transparent audit trail.
   
@@ -163,9 +167,9 @@ Immi-OS is orchestrated primarily via Make.com and utilizes a centralized Airtab
 <details>
 <summary><b>Module J: Executive Dashboard & Quality Assurance</b></summary>
 
-* **The CFO Command Center:** A secure, web-based UI built on Softr that visualizes real-time API spending and total automated tasks across all 15 scenarios.
+* **The CFO Command Center (Softr):** A secure, role-based web UI built on top of the Airtable base. It visualizes real-time pipeline velocity, conversion rates, and total API spending across the entire automation ecosystem.
   
-* **The 5% QA Audit:** A purpose-built "drill-down" interface allowing the Senior Partner to randomly sample 5% of all successful AI executions. It displays the System Prompt and AI Output in a human-readable format to ensure strict compliance and correct legal tone.
+* **The 5% QA Audit Protocol:** To ensure AI hallucinations do not reach the client, the dashboard features a purpose-built QA interface. It forces the Senior Partner to randomly sample 5% of all AI-generated emails and legal drafts, displaying the underlying prompt alongside the output to guarantee strict legal and tonal compliance.
   
 </details>
 
