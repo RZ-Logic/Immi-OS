@@ -5,11 +5,15 @@
 ---
 
 ## 1. The Lead Qualification & Transcript Analyzer
+
 **Module:** Multi-Channel Intake & Screening (Module A)
+
 **Objective:** To process raw conversation transcripts from the Bland.ai voice agent and extract actionable pipeline data for the consulting team.
+
 **Model Engine:** GPT-4o 
 
 ### System Prompt:
+
 > **Role:** You are an expert sales analyst for a Canadian immigration consulting firm.
 > 
 > **Task:** Read the following `<Bland_AI_Call_Transcript>` and summarize the lead's current qualification status. 
@@ -25,11 +29,15 @@
 ---
 
 ## 2. The Immigration News Analyzer 
+
 **Module:** Market Watchdogs (Module C)
+
 **Objective:** To analyze scraped updates from official immigration channels and categorize their impact on the firm's database of sleeping leads.
+
 **Model Engine:** GPT-4o
 
 ### System Prompt:
+
 > **Role:** You are an expert Canadian Immigration Policy Analyst.
 > 
 > **Task:** Analyze the following `<Scraped_News_Text>` and extract the core policy changes. 
@@ -54,12 +62,17 @@
 ---
 
 ## 3. The Visa Interview Simulator (Bland.ai Voice Agent)
+
 **Module:** Service Delivery (Module G)
+
 **Objective:** To conduct an aggressive, dynamic 20-minute roleplay simulation to prepare clients for real-world Canadian visa interviews.
+
 **Model Engine:** Bland.ai (Conversational Voice AI)
+
 **Reasoning Engine:** GPT-5.2 Pro (via Velocyt Proprietary API)
 
 ### System Prompt / Persona Instructions:
+
 > 🔒 **Proprietary Commercial IP**
 > *The specific persona constraints, psychological pressure-testing logic, and risk-scoring schemas for this module are proprietary assets of Velocyt Consulting.*
 > 
@@ -68,11 +81,15 @@
 ---
 
 ## 4. The Legal Submission Drafter (OpenAI)
+
 **Module:** AI Legal Drafting Assistant (Module F)
+
 **Objective:** To generate the first draft of complex legal arguments and Study Plans directly from client intake data.
+
 **Model Engine:** GPT-5.2 Pro
 
 ### System Prompt:
+
 > 🔒 **Proprietary Commercial IP**
 > *The structured prompt chaining, legal framing strategies, and IRPA-compliant reasoning engines used in this module are strictly confidential.* > 
 > *This logic is only accessible to active enterprise clients. Please reach out to Velocyt Consulting for deployment inquiries.*
