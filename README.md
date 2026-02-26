@@ -126,11 +126,11 @@ Immi-OS is orchestrated primarily via Make.com and utilizes a centralized Airtab
 <details>
 <summary><b>Module G: AI Visa Interview Simulator</b></summary>
 
-* **The Feature:** A specialized Bland.ai voice agent configured with a strict, low-latency "Canadian Visa Officer" persona, designed to interrupt and pressure-test the client.
+* **The Feature:** A specialized Bland.ai voice agent configured with a strict, low-latency "IRCC / CBSA Officer" persona, designed to interrupt and pressure-test clients.
   
-* **The Workflow:** Prior to a real embassy interview, the system calls the client and conducts a dynamic 20-minute roleplay simulation based on their specific visa category.
+* **The Workflow:** While most Canadian applications are paper-based, targeted interviews (like Spousal Sponsorships) and Port of Entry (airport) examinations are incredibly high-stakes. Prior to landing or an official summons, the system calls the client and conducts a dynamic 20-minute aggressive roleplay simulation based on their specific case file.
   
-* **The JSON Risk Scorecard:** Post-call, the transcript is analyzed to generate a strict JSON output evaluating the client's performance (e.g., flagged hesitation on financial questions, contradictory timeline statements). This provides the consultant with targeted coaching data, saving hours of manual prep time.
+* **The JSON Risk Scorecard:** Post-call, the transcript is analyzed by GPT-5.2 pro to generate a strict JSON output evaluating the client's performance (e.g., flagged hesitation on financial questions, contradictory relationship timelines). This provides the consultant with targeted coaching data, replacing hours of manual prep time.
   
 </details>
 
