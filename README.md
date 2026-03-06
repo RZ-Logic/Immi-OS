@@ -175,6 +175,18 @@ Immi-OS is orchestrated primarily via Make.com and utilizes a centralized Airtab
 
 ---
 
+## 🛡️ Architecture & Fault Tolerance
+
+Immi-OS is engineered with a **Database-First Safeguard** to ensure 100% data integrity for high-stakes legal documentation.
+
+* **Persistent Queueing (Airtable):** Unlike standard webhooks that "fire and forget," Immi-OS utilizes Airtable as an ACID-compliant staging layer. All incoming client payloads are committed to a permanent record before any logic execution begins.
+* **Asynchronous Processing (Make.com):** Automation scenarios are triggered via record monitoring rather than direct HTTP POST requests. This decoupled architecture ensures that if the automation engine is offline, the client data is never dropped, it simply waits in the queue.
+* **Auto-Recovery & Sequential Replay:** Once the processing service (Make) is restored, it automatically fetches unhandled records from the Airtable queue and processes them sequentially, maintaining the correct chronological order for legal filings.
+* **Multi-Stage Validation:** Every node in the 15-scenario ecosystem contains custom error-handling logic (Break/Resume) to prevent silent failures during PDF generation or compliance checks.
+
+---
+
+
 ## 🚀 Future Vision & Roadmap (V2.0)
 
 * **Implementation of RAG (Retrieval-Augmented Generation):** Transitioning from prompt chaining to a Vector Database (e.g., Pinecone) containing the firm's successful past submissions and the Immigration and Refugee Protection Act (IRPA). Enabling the AI to cite specific case law and mimic the Senior Partner's writing style with high precision.
