@@ -1,4 +1,6 @@
-<h1 align="center">🍁 Immi-OS</h1>
+<h1 align="center">
+  <img src="./assets/immi-os-banner.png" alt="Immi-OS. From first inquiry to verified payment" width="100%" />
+</h1>
 
 <p align="center">
   <strong>Operations automation for Canadian immigration consulting firms:<br/>intake and voice screening, follow-up, policy monitoring and reactivation, client support, contracts,<br/>payment gating, submission drafting and interview preparation.<br/>The AI handles volume and first drafts. The licensed consultant (RCIC) keeps every legal judgment and every sign-off.</strong>
