@@ -1,0 +1,295 @@
+{
+  "name": "Lead Qualifier",
+  "flow": [
+    {
+      "id": 1,
+      "module": "gateway:CustomWebHook",
+      "parameters": {
+        "hook": 1
+      }
+    },
+    {
+      "id": 2,
+      "module": "util:FunctionSleep",
+      "mapper": {
+        "duration": "5"
+      },
+      "filter": {
+        "name": "Webhook secret",
+        "conditions": [
+          [
+            {
+              "a": "{{1.secret}}",
+              "b": "{{var.team.webhook_secret}}",
+              "o": "text:equal"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "module": "airtable:ActionCreateRecord",
+      "mapper": {
+        "table": "tblf73Cdii3CsLKfL",
+        "record": {
+          "fldFC0g1pzkgHOV3g": "Lead Qualifier",
+          "fldgzlLkRAwc6KGoh": "Success",
+          "fldx9nJ4XmlQx1frF": [
+            "{{1.lead_id}}"
+          ],
+          "fldeAVW2SAkT6KpZw": "Decision {{1.status}} because {{1.reason}}",
+          "fldHf8yjOMGfgyJhc": "{{1.call_id}}"
+        }
+      },
+      "onerror": [
+        {
+          "id": 30,
+          "module": "slack:CreateMessage",
+          "mapper": {
+            "text": "{{error.message}}"
+          }
+        },
+        {
+          "id": 31,
+          "module": "airtable:ActionCreateRecord",
+          "mapper": {
+            "table": "tblf73Cdii3CsLKfL",
+            "record": {
+              "fldFC0g1pzkgHOV3g": "Lead Qualifier",
+              "fldgzlLkRAwc6KGoh": "Error"
+            }
+          }
+        },
+        {
+          "id": 32,
+          "module": "builtin:Resume"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "module": "airtable:ActionUpdateRecords",
+      "mapper": {
+        "table": "tblHk09sCKLcOJXr9",
+        "id": "{{1.lead_id}}",
+        "record": {
+          "fldFrKT1VdHwzYwrG": "{{1.status}}"
+        }
+      },
+      "onerror": [
+        {
+          "id": 40,
+          "module": "builtin:BasicRouter",
+          "routes": [
+            {
+              "flow": [
+                {
+                  "id": 41,
+                  "module": "airtable:ActionCreateRecord",
+                  "mapper": {
+                    "table": "tblf73Cdii3CsLKfL",
+                    "record": {
+                      "fldFC0g1pzkgHOV3g": "Lead Qualifier",
+                      "fldgzlLkRAwc6KGoh": "Error",
+                      "fld7oKusxba5RuIZR": "{{error.type}} {{error.message}}"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "flow": [
+                {
+                  "id": 42,
+                  "module": "slack:CreateMessage",
+                  "mapper": {
+                    "text": "{{error.message}}"
+                  }
+                },
+                {
+                  "id": 43,
+                  "module": "builtin:Break"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "module": "builtin:BasicRouter",
+      "parameters": {
+        "else": 2
+      },
+      "routes": [
+        {
+          "flow": [
+            {
+              "id": 6,
+              "module": "google-email:sendAnEmail",
+              "mapper": {
+                "to": "{{1.email}}"
+              },
+              "filter": {
+                "name": "Is VIP",
+                "conditions": [
+                  [
+                    {
+                      "a": "{{1.status}}",
+                      "b": "VIP",
+                      "o": "text:equal:ci"
+                    }
+                  ]
+                ]
+              },
+              "onerror": [
+                {
+                  "id": 60,
+                  "module": "airtable:ActionCreateRecord",
+                  "mapper": {
+                    "table": "tblf73Cdii3CsLKfL",
+                    "record": {
+                      "fldFC0g1pzkgHOV3g": "Lead Qualifier",
+                      "fldgzlLkRAwc6KGoh": "Error"
+                    }
+                  }
+                },
+                {
+                  "id": 61,
+                  "module": "slack:CreateMessage",
+                  "mapper": {
+                    "text": "{{error.message}}"
+                  }
+                },
+                {
+                  "id": 62,
+                  "module": "builtin:Ignore"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "flow": [
+            {
+              "id": 7,
+              "module": "google-email:sendAnEmail",
+              "mapper": {
+                "to": "{{1.email}}"
+              },
+              "filter": {
+                "name": "Is Nurture",
+                "conditions": [
+                  [
+                    {
+                      "a": "{{1.status}}",
+                      "b": "Nurture",
+                      "o": "text:equal:ci"
+                    }
+                  ]
+                ]
+              },
+              "onerror": [
+                {
+                  "id": 70,
+                  "module": "airtable:ActionCreateRecord",
+                  "mapper": {
+                    "table": "tblf73Cdii3CsLKfL",
+                    "record": {
+                      "fldFC0g1pzkgHOV3g": "Lead Qualifier",
+                      "fldgzlLkRAwc6KGoh": "Error"
+                    }
+                  }
+                },
+                {
+                  "id": 71,
+                  "module": "slack:CreateMessage",
+                  "mapper": {
+                    "text": "{{error.message}}"
+                  }
+                },
+                {
+                  "id": 72,
+                  "module": "builtin:Ignore"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "flow": [
+            {
+              "id": 8,
+              "module": "airtable:ActionCreateRecord",
+              "mapper": {
+                "table": "tblf73Cdii3CsLKfL",
+                "record": {
+                  "fldFC0g1pzkgHOV3g": "Lead Qualifier",
+                  "fldgzlLkRAwc6KGoh": "Error",
+                  "fldx9nJ4XmlQx1frF": [
+                    "{{1.lead_id}}"
+                  ],
+                  "fldHf8yjOMGfgyJhc": "{{1.call_id}}",
+                  "fldeAVW2SAkT6KpZw": "UNMATCHED DECISION VALUE: {{1.status}}"
+                }
+              },
+              "filter": {
+                "name": "Fallback",
+                "conditions": []
+              },
+              "onerror": [
+                {
+                  "id": 83,
+                  "module": "slack:CreateMessage",
+                  "mapper": {
+                    "text": "{{error.message}}"
+                  }
+                },
+                {
+                  "id": 84,
+                  "module": "builtin:Resume"
+                }
+              ]
+            },
+            {
+              "id": 9,
+              "module": "slack:CreateMessage",
+              "mapper": {
+                "text": "Unmatched decision, lead {{1.lead_id}}, call {{1.call_id}}"
+              },
+              "onerror": [
+                {
+                  "id": 90,
+                  "module": "airtable:ActionCreateRecord",
+                  "mapper": {
+                    "table": "tblf73Cdii3CsLKfL",
+                    "record": {
+                      "fldFC0g1pzkgHOV3g": "Lead Qualifier",
+                      "fldgzlLkRAwc6KGoh": "Error"
+                    }
+                  }
+                },
+                {
+                  "id": 91,
+                  "module": "slack:CreateMessage",
+                  "mapper": {
+                    "text": "{{error.message}}"
+                  }
+                },
+                {
+                  "id": 92,
+                  "module": "builtin:Resume"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "version": 1
+  }
+}

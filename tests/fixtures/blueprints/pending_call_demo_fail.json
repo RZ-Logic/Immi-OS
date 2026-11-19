@@ -1,0 +1,26 @@
+{
+  "name": "Pending Call Demo",
+  "flow": [
+    {"id": 1, "module": "gateway:CustomWebHook", "parameters": {"hook": 2}},
+    {"id": 2, "module": "airtable:ActionUpdateRecords",
+     "mapper": {"table": "tblHk09sCKLcOJXr9", "id": "{{1.lead_id}}", "record": {"fldFrKT1VdHwzYwrG": "{{1.status}}"}},
+     "onerror": [
+       {"id": 20, "module": "airtable:ActionCreateRecord", "mapper": {"table": "tblf73Cdii3CsLKfL", "record": {"fldFC0g1pzkgHOV3g": "Pending Call Demo", "fldgzlLkRAwc6KGoh": "Error"}}},
+       {"id": 21, "module": "slack:CreateMessage", "mapper": {"text": "{{error.message}}"}},
+       {"id": 22, "module": "builtin:Break"}
+     ]},
+    {"id": 3, "module": "builtin:BasicRouter", "routes": [
+      {"flow": [
+        {"id": 4, "module": "airtable:ActionCreateRecord",
+         "filter": {"name": "Is VIP", "conditions": [[{"a": "{{1.status}}", "b": "VIP", "o": "text:equal:ci"}]]},
+         "mapper": {"table": "tblf73Cdii3CsLKfL", "record": {"fldFC0g1pzkgHOV3g": "Pending Call Demo", "fldx9nJ4XmlQx1frF": ["{{1.lead_id}}"], "fldeAVW2SAkT6KpZw": "{{1.status}} {{1.reason}}", "fldHf8yjOMGfgyJhc": "{{1.call_id}}"}}}
+      ]},
+      {"flow": [
+        {"id": 5, "module": "airtable:ActionCreateRecord",
+         "filter": {"name": "Is Nurture", "conditions": [[{"a": "{{1.status}}", "b": "Nurture", "o": "text:equal"}]]},
+         "mapper": {"table": "tblf73Cdii3CsLKfL", "record": {"fldFC0g1pzkgHOV3g": "Pending Call Demo", "fldx9nJ4XmlQx1frF": ["{{1.lead_id}}"], "fldeAVW2SAkT6KpZw": "{{1.status}} {{1.reason}}", "fldHf8yjOMGfgyJhc": "{{1.call_id}}"}}}
+      ]}
+    ]}
+  ],
+  "metadata": {"version": 1}
+}

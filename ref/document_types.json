@@ -1,0 +1,32 @@
+{
+  "source": "X-17.2. Decided by Rizwan 2026-11-02: SUBMISSION-LETTER and LOE for every code, STUDY-PLAN for TR-STUDY only. Whether a study plan is written in the applicant's voice (16.3) stays open. Word bands (min_words, max_words) added for F-F13.1 on 2026-11-03: under the floor hard-fails as a cut-off draft, over the ceiling soft-flags. Provisional until F-F14 measures real drafts.",
+  "document_types": [
+    {
+      "code": "SUBMISSION-LETTER",
+      "display_name": "Submission letter",
+      "restricted_to_visa_code": null,
+      "active": true,
+      "sort_order": 10,
+      "min_words": 500,
+      "max_words": 4000
+    },
+    {
+      "code": "LOE",
+      "display_name": "Letter of explanation",
+      "restricted_to_visa_code": null,
+      "active": true,
+      "sort_order": 20,
+      "min_words": 250,
+      "max_words": 2500
+    },
+    {
+      "code": "STUDY-PLAN",
+      "display_name": "Study plan",
+      "restricted_to_visa_code": "TR-STUDY",
+      "active": true,
+      "sort_order": 30,
+      "min_words": 300,
+      "max_words": 1500
+    }
+  ]
+}

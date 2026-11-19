@@ -1,0 +1,48 @@
+# Immi-OS Stripe webhook verifier (F-H9 option A3). Secrets are set with
+# `wrangler secret put` and never live in this file: STRIPE_WEBHOOK_SECRET,
+# MAKE_LISTENER_URL, MAKE_API_KEY. Deploy steps: README.md.
+#
+# Two Workers: the top level is the TEST Worker, `--env live` is a separate LIVE Worker
+# with its own name, secrets and listener. Test credentials never reach the live listener,
+# and a redeploy of one can never flip the other's mode.
+name = "immios-stripe-verify-test"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+workers_dev = true
+# Each `wrangler secret put` and deploy makes a new version. Version preview URLs would keep
+# old versions (and an old, rolled signing secret) callable, so they are off.
+preview_urls = false
+
+# Kept on explicitly: without this block a later deploy turns Workers Logs off.
+[observability]
+enabled = true
+
+[vars]
+STRIPE_LIVEMODE = "false"
+# Stripe Invoice events (F-H1 = Invoice). invoice.paid covers real payments and payments
+# marked paid out of band. The listener re-fetches the invoice and reads paid_out_of_band.
+# invoice.finalized and invoice.voided are left out: Immi-OS sends the invoice link itself and voids its own
+# superseded invoices (F-H1.2), so neither carries anything to act on.
+# invoice.payment_succeeded is left out on purpose: Stripe sends it together with
+# invoice.paid for the same payment (docs.stripe.com/invoicing/integration).
+FORWARD_EVENT_TYPES = "invoice.paid,invoice.payment_failed,invoice.marked_uncollectible"
+# Optional caller IP allow-list from https://docs.stripe.com/ips (webhooks section). Empty
+# means off. The zone WAF rule (README) is the real gate, this is a second layer.
+STRIPE_WEBHOOK_IPS = ""
+
+[env.live]
+name = "immios-stripe-verify-live"
+# Live is served only from a velocyt.ca hostname, where a WAF rule drops non-Stripe IPs
+# before the Worker runs (so junk traffic cannot use up the Free plan's daily requests).
+workers_dev = false
+preview_urls = false
+routes = [{ pattern = "stripe-hook.velocyt.ca", custom_domain = true }]
+
+[env.live.observability]
+enabled = true
+
+# Vars are not inherited by environments, so every one is listed again.
+[env.live.vars]
+STRIPE_LIVEMODE = "true"
+FORWARD_EVENT_TYPES = "invoice.paid,invoice.payment_failed,invoice.marked_uncollectible"
+STRIPE_WEBHOOK_IPS = ""

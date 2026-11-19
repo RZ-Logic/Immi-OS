@@ -1,0 +1,14 @@
+{
+  "name": "immios-ff14",
+  "private": true,
+  "type": "module",
+  "description": "F-F14 (X-38): the offline Module F evaluation harness. Fills the registered drafting-chain prompts, calls the Anthropic API, grounds and validates through the live ff13 functions in rolled-back transactions.",
+  "scripts": {
+    "check": "node run.mjs --check",
+    "dry-run": "node run.mjs --dry-run",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "1.4.0"
+  }
+}

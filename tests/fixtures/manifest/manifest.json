@@ -1,0 +1,28 @@
+{
+  "pulled_at": "2026-10-28T00:00:00Z",
+  "scenarios": [
+    {
+      "id": 900003,
+      "name": "Lead Qualifier",
+      "isActive": false
+    },
+    {
+      "id": 900001,
+      "name": "Batch Outbound Caller",
+      "isActive": false
+    },
+    {
+      "id": 900009,
+      "name": "Withheld Scenario",
+      "isActive": false,
+      "file": null,
+      "withheld": true,
+      "withheld_pattern_types": [
+        "authorization_header_literal"
+      ],
+      "withheld_locations": [
+        "authorization_header_literal at $.flow[1].mapper.headers[0].value"
+      ]
+    }
+  ]
+}

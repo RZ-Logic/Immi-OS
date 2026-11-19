@@ -1,0 +1,13 @@
+{
+  "name": "Application Approved - Auto-Celebrate",
+  "flow": [
+    {"id": 1, "module": "airtable:TriggerWatchRecords", "parameters": {"table": "tblTestApps000001", "formula": "{File Status} = \"Approved\""}},
+    {"id": 2, "module": "airtable:ActionCreateRecord", "mapper": {"table": "tblf73Cdii3CsLKfL", "record": {"fldFC0g1pzkgHOV3g": "Customer Support Bot for existing", "fldgzlLkRAwc6KGoh": "Success"}},
+     "onerror": [
+       {"id": 20, "module": "airtable:ActionCreateRecord", "mapper": {"table": "tblf73Cdii3CsLKfL", "record": {"fldFC0g1pzkgHOV3g": "Application Approved - Auto-Celebrate", "fldgzlLkRAwc6KGoh": "Error"}}},
+       {"id": 21, "module": "slack:CreateMessage", "mapper": {"text": "{{error.message}}"}},
+       {"id": 22, "module": "builtin:Resume"}
+     ]}
+  ],
+  "metadata": {"version": 1}
+}

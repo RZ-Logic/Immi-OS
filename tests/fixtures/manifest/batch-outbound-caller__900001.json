@@ -1,0 +1,89 @@
+{
+  "name": "Batch Outbound Caller",
+  "flow": [
+    {
+      "id": 1,
+      "module": "airtable:ActionSearchRecords",
+      "mapper": {
+        "table": "tblHk09sCKLcOJXr9",
+        "formula": "{Status} = 'Pending Call'"
+      }
+    },
+    {
+      "id": 2,
+      "module": "bland:sendACall",
+      "mapper": {
+        "phone_number": "{{1.Phone}}"
+      },
+      "onerror": [
+        {
+          "id": 20,
+          "module": "airtable:ActionCreateRecord",
+          "mapper": {
+            "table": "tblf73Cdii3CsLKfL",
+            "record": {
+              "fldFC0g1pzkgHOV3g": "Batch Outband Caller",
+              "fldgzlLkRAwc6KGoh": "Error",
+              "fldx9nJ4XmlQx1frF": [
+                "{{1.id}}"
+              ]
+            }
+          }
+        },
+        {
+          "id": 21,
+          "module": "slack:CreateMessage",
+          "mapper": {
+            "text": "{{error.message}}"
+          }
+        },
+        {
+          "id": 22,
+          "module": "builtin:Ignore"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "module": "airtable:ActionCreateRecord",
+      "mapper": {
+        "table": "tblf73Cdii3CsLKfL",
+        "record": {
+          "fldFC0g1pzkgHOV3g": "Batch Outband Caller",
+          "fldgzlLkRAwc6KGoh": "Success",
+          "fldx9nJ4XmlQx1frF": [
+            "{{1.id}}"
+          ],
+          "fldHf8yjOMGfgyJhc": "{{2.call_id}}"
+        }
+      },
+      "onerror": [
+        {
+          "id": 30,
+          "module": "slack:CreateMessage",
+          "mapper": {
+            "text": "{{error.message}}"
+          }
+        },
+        {
+          "id": 31,
+          "module": "airtable:ActionCreateRecord",
+          "mapper": {
+            "table": "tblf73Cdii3CsLKfL",
+            "record": {
+              "fldFC0g1pzkgHOV3g": "Batch Outbound Caller",
+              "fldgzlLkRAwc6KGoh": "Error"
+            }
+          }
+        },
+        {
+          "id": 32,
+          "module": "builtin:Ignore"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "version": 1
+  }
+}

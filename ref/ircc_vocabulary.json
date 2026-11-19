@@ -1,0 +1,3961 @@
+{
+  "source": "F-F13.2 controlled vocabulary, read 2026-11-16 from canada.ca IRCC pages and the IRB site (one office relocation from news, marked). kind is office, program or organization. canonical_name is the form a draft should use. ircc_aliases are other forms seen on the cited IRCC or IRB pages, common_variants are accepted shorthand not seen there. Aliases are lowercase and unique across rows after folding diacritics, and the canonical name is never repeated as an alias. status former means IRCC no longer uses the name and replaced_by names the current row. successor_note, when set, is what the flag names instead, where the source names more than one successor. letter_addressee says whether a submission may be addressed there: yes, on_request (only when that office asked), no, or n/a for a program. visa_codes ties a row to the ref.visa_types codes it belongs to. Public facts only, no client data.",
+  "ircc_vocabulary": [
+    {
+      "id": "office-cpc-edmonton",
+      "kind": "office",
+      "canonical_name": "Case Processing Centre in Edmonton",
+      "ircc_aliases": [
+        "cpc edmonton",
+        "case processing centre (cpc): edmonton, alberta"
+      ],
+      "common_variants": [
+        "cpc-e",
+        "edmonton case processing centre",
+        "case processing centre edmonton"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": "Processes work permits, study permits, temporary resident extensions and TRPs, live-in caregiver and caring pathway PR, and RPRF loans.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/case-processing-centre-edmonton-alberta.html"
+      ],
+      "source_note": "Find an IRCC office, page modified 2026-08-14, read 2026-11-16. CPC Edmonton page modified 2026-09-01.",
+      "sort_order": 10,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-cpc-mississauga",
+      "kind": "office",
+      "canonical_name": "Case Processing Centre in Mississauga",
+      "ircc_aliases": [
+        "cpc mississauga",
+        "cpc-m"
+      ],
+      "common_variants": [
+        "mississauga case processing centre",
+        "case processing centre mississauga"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": "Processes family sponsorship, PR for protected persons and Convention refugees in Canada, and the TRP holder class. It handles digitized files only, paper goes to the IRCC Digitization Centre.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/case-processing-centre-mississauga-ontario.html"
+      ],
+      "source_note": "Find an IRCC office, page modified 2026-08-14, read 2026-11-16.",
+      "sort_order": 20,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-cpc-ottawa",
+      "kind": "office",
+      "canonical_name": "Case Processing Centre in Ottawa",
+      "ircc_aliases": [
+        "cpc ottawa",
+        "case processing centre: ottawa, ontario",
+        "cpc-o",
+        "ottawa case processing centre"
+      ],
+      "common_variants": [
+        "case processing centre ottawa"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": "Processes in-Canada TRV applications from study or work permit holders, and PR visa applications from the United States and Canada after CPC Mississauga or CIO Sydney checks completeness.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/case-processing-centre-ottawa-ontario.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/reports-statistics/audits/case-processing-centre-ottawa.html"
+      ],
+      "source_note": "Find an IRCC office, page modified 2026-08-14, read 2026-11-16. CPC Ottawa page modified 2023-12-08. The 2016 internal audit calls it the largest visa office in the IRCC network.",
+      "sort_order": 30,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-cpc-sydney",
+      "kind": "office",
+      "canonical_name": "Case Processing Centre in Sydney",
+      "ircc_aliases": [
+        "cpc sydney",
+        "cpc-sydney",
+        "case processing centre: sydney, nova scotia"
+      ],
+      "common_variants": [
+        "sydney case processing centre",
+        "case processing centre sydney",
+        "cpc-s"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": "Sydney, Nova Scotia. Processes PR cards, citizenship and family sponsorship. Not the visa office in Sydney, Australia.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/case-processing-centre-sydney-nova-scotia.html"
+      ],
+      "source_note": "Find an IRCC office, page modified 2026-08-14, read 2026-11-16. CPC Sydney page modified 2024-12-06.",
+      "sort_order": 40,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-cio-sydney",
+      "kind": "office",
+      "canonical_name": "Centralized Intake Office in Sydney",
+      "ircc_aliases": [
+        "centralized intake office",
+        "cio sydney",
+        "cio"
+      ],
+      "common_variants": [
+        "cio-s",
+        "centralised intake office",
+        "centralized intake office sydney"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": "Sydney, Nova Scotia. Receives FSW, FST, CEC, PNP, Start-up Visa, Quebec economic and self-employed PR applications.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices.html"
+      ],
+      "source_note": "Find an IRCC office, page modified 2026-08-14, read 2026-11-16.",
+      "sort_order": 50,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-osc-ottawa",
+      "kind": "office",
+      "canonical_name": "Operations Support Centre in Ottawa",
+      "ircc_aliases": [
+        "operations support centre",
+        "osc",
+        "osc ottawa"
+      ],
+      "common_variants": [
+        "operational support centre",
+        "operations support centre ottawa"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": "Processes IEC work permits, online in-Canada temporary resident applications, verification of status, and replacement and amendment of documents. A 2025 binder places the OSC in Gatineau.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/minister-2025-03/departmental-overview.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/reports-statistics/audits/case-processing-centre-ottawa.html"
+      ],
+      "source_note": "Find an IRCC office, page modified 2026-08-14, read 2026-11-16. The 2016 audit writes operational support centre.",
+      "sort_order": 60,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-ircc-digitization-centre",
+      "kind": "office",
+      "canonical_name": "IRCC Digitization Centre",
+      "ircc_aliases": [],
+      "common_variants": [
+        "digitization centre",
+        "digitisation centre"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "New Waterford and Sydney, Nova Scotia. A mail and courier address that digitizes paper for CPC Mississauga and CPC Sydney. It decides nothing, so a letter names the processing office.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/case-processing-centre-mississauga-ontario.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/case-processing-centre-sydney-nova-scotia.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 70,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-roc-ottawa",
+      "kind": "office",
+      "canonical_name": "Resettlement Operations Centre in Ottawa",
+      "ircc_aliases": [
+        "resettlement operations centre"
+      ],
+      "common_variants": [
+        "roc-o",
+        "resettlement operations centre ottawa"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "Named in the 2025 minister binder. Its role in private sponsorship intake was not read on an applicant page.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/minister-2025-03/departmental-overview.html"
+      ],
+      "source_note": "Binder dated 2025-07-11, read 2026-11-16.",
+      "sort_order": 80,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-goc-manila",
+      "kind": "office",
+      "canonical_name": "Manila Global Operations Centre",
+      "ircc_aliases": [],
+      "common_variants": [
+        "goc manila",
+        "global operations centre manila",
+        "global operations centre in manila"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "Internal processing hub. IRCC points applicants to the visa office list, so a letter names the visa office, not the hub.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/minister-2025-05/departmental-overview.html"
+      ],
+      "source_note": "Binder dated 2025-09-11, read 2026-11-16.",
+      "sort_order": 90,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-goc-bucharest",
+      "kind": "office",
+      "canonical_name": "Bucharest Global Operations Centre",
+      "ircc_aliases": [],
+      "common_variants": [
+        "goc bucharest",
+        "global operations centre bucharest",
+        "global operations centre in bucharest"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "Internal processing hub, see the Manila row.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/minister-2025-05/departmental-overview.html"
+      ],
+      "source_note": "Binder dated 2025-09-11, read 2026-11-16.",
+      "sort_order": 100,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-cpc-vegreville",
+      "kind": "office",
+      "canonical_name": "Case Processing Centre in Vegreville",
+      "ircc_aliases": [],
+      "common_variants": [
+        "cpc vegreville",
+        "cpc-v",
+        "vegreville case processing centre"
+      ],
+      "status": "former",
+      "replaced_by": "office-cpc-edmonton",
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "Listed as a CPC in the 2016 IRCC audit. Relocated to Edmonton (announced 2016, move planned for 2018). The relocation is sourced from news, not from an IRCC page.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/reports-statistics/audits/case-processing-centre-ottawa.html",
+        "https://globalnews.ca/news/3030312/vegreville-case-processing-centre-relocated-280-jobs-impacted-town"
+      ],
+      "source_note": "Audit dated 2016-10-13. Global News 2016-10-28 is a secondary source. Read 2026-11-16.",
+      "sort_order": 110,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vac",
+      "kind": "office",
+      "canonical_name": "Visa application centre",
+      "ircc_aliases": [
+        "vac"
+      ],
+      "common_variants": [
+        "visa application center"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "private",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "Private contractors for biometrics and passports. IRCC states they play no role in decisions, so a submission is never addressed to one.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/find-visa-application-centre.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 120,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-abu-dhabi",
+      "kind": "office",
+      "canonical_name": "Visa office in Abu Dhabi, United Arab Emirates",
+      "ircc_aliases": [
+        "visa office in abu dhabi"
+      ],
+      "common_variants": [
+        "abu dhabi visa office",
+        "canadian visa office in abu dhabi",
+        "visa section in abu dhabi"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 130,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-accra",
+      "kind": "office",
+      "canonical_name": "Visa office in Accra, Ghana",
+      "ircc_aliases": [
+        "visa office in accra"
+      ],
+      "common_variants": [
+        "accra visa office",
+        "canadian visa office in accra",
+        "visa section in accra"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": "For Nigeria, Nairobi handles temporary residents and Accra permanent residents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 140,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-amman",
+      "kind": "office",
+      "canonical_name": "Visa office in Amman, Jordan",
+      "ircc_aliases": [
+        "visa office in amman"
+      ],
+      "common_variants": [
+        "amman visa office",
+        "canadian visa office in amman",
+        "visa section in amman"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 150,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-ankara",
+      "kind": "office",
+      "canonical_name": "Visa office in Ankara, Türkiye",
+      "ircc_aliases": [
+        "visa office in ankara"
+      ],
+      "common_variants": [
+        "ankara visa office",
+        "canadian visa office in ankara",
+        "visa section in ankara",
+        "visa office in ankara, turkey"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": "IRCC writes Türkiye. Turkey is accepted as a variant.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 160,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-bangkok",
+      "kind": "office",
+      "canonical_name": "Visa office in Bangkok, Thailand",
+      "ircc_aliases": [
+        "visa office in bangkok"
+      ],
+      "common_variants": [
+        "bangkok visa office",
+        "canadian visa office in bangkok",
+        "visa section in bangkok"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": "For Bhutan and Nepal, Bangkok handles temporary residents and Singapore permanent residents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 170,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-beijing",
+      "kind": "office",
+      "canonical_name": "Visa office in Beijing, China",
+      "ircc_aliases": [
+        "visa office in beijing"
+      ],
+      "common_variants": [
+        "beijing visa office",
+        "canadian visa office in beijing",
+        "visa section in beijing"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 180,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-beirut",
+      "kind": "office",
+      "canonical_name": "Visa office in Beirut, Lebanon",
+      "ircc_aliases": [
+        "visa office in beirut"
+      ],
+      "common_variants": [
+        "beirut visa office",
+        "canadian visa office in beirut",
+        "visa section in beirut"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 190,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-bogota",
+      "kind": "office",
+      "canonical_name": "Visa office in Bogota, Colombia",
+      "ircc_aliases": [
+        "visa office in bogota"
+      ],
+      "common_variants": [
+        "bogota visa office",
+        "canadian visa office in bogota",
+        "visa section in bogota",
+        "visa office in bogotá",
+        "bogotá visa office",
+        "canadian visa office in bogotá",
+        "visa section in bogotá"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 200,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-bucharest",
+      "kind": "office",
+      "canonical_name": "Visa office in Bucharest, Romania",
+      "ircc_aliases": [
+        "visa office in bucharest"
+      ],
+      "common_variants": [
+        "bucharest visa office",
+        "canadian visa office in bucharest",
+        "visa section in bucharest"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 210,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-buenos-aires",
+      "kind": "office",
+      "canonical_name": "Visa office in Buenos Aires, Argentina",
+      "ircc_aliases": [
+        "visa office in buenos aires"
+      ],
+      "common_variants": [
+        "buenos aires visa office",
+        "canadian visa office in buenos aires",
+        "visa section in buenos aires"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 220,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-cairo",
+      "kind": "office",
+      "canonical_name": "Visa office in Cairo, Egypt",
+      "ircc_aliases": [
+        "visa office in cairo"
+      ],
+      "common_variants": [
+        "cairo visa office",
+        "canadian visa office in cairo",
+        "visa section in cairo"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 230,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-colombo",
+      "kind": "office",
+      "canonical_name": "Visa office in Colombo, Sri Lanka",
+      "ircc_aliases": [
+        "visa office in colombo"
+      ],
+      "common_variants": [
+        "colombo visa office",
+        "canadian visa office in colombo",
+        "visa section in colombo"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 240,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-dakar",
+      "kind": "office",
+      "canonical_name": "Visa office in Dakar, Senegal",
+      "ircc_aliases": [
+        "visa office in dakar"
+      ],
+      "common_variants": [
+        "dakar visa office",
+        "canadian visa office in dakar",
+        "visa section in dakar"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 250,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-dar-es-salaam",
+      "kind": "office",
+      "canonical_name": "Visa office in Dar es Salaam, Tanzania",
+      "ircc_aliases": [
+        "visa office in dar es salaam"
+      ],
+      "common_variants": [
+        "dar es salaam visa office",
+        "canadian visa office in dar es salaam",
+        "visa section in dar es salaam"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 260,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-guangzhou",
+      "kind": "office",
+      "canonical_name": "Visa office in Guangzhou, China",
+      "ircc_aliases": [
+        "visa office in guangzhou"
+      ],
+      "common_variants": [
+        "guangzhou visa office",
+        "canadian visa office in guangzhou",
+        "visa section in guangzhou"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 270,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-ho-chi-minh-city",
+      "kind": "office",
+      "canonical_name": "Visa office in Ho Chi Minh City, Vietnam",
+      "ircc_aliases": [
+        "visa office in ho chi minh city"
+      ],
+      "common_variants": [
+        "ho chi minh city visa office",
+        "canadian visa office in ho chi minh city",
+        "visa section in ho chi minh city",
+        "visa office in ho chi minh",
+        "ho chi minh visa office",
+        "canadian visa office in ho chi minh",
+        "visa section in ho chi minh"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 280,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-hong-kong",
+      "kind": "office",
+      "canonical_name": "Visa office in Hong Kong, Hong Kong (SAR)",
+      "ircc_aliases": [
+        "visa office in hong kong"
+      ],
+      "common_variants": [
+        "hong kong visa office",
+        "canadian visa office in hong kong",
+        "visa section in hong kong"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 290,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-islamabad",
+      "kind": "office",
+      "canonical_name": "Visa office in Islamabad, Pakistan",
+      "ircc_aliases": [
+        "visa office in islamabad"
+      ],
+      "common_variants": [
+        "islamabad visa office",
+        "canadian visa office in islamabad",
+        "visa section in islamabad"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 300,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-jakarta",
+      "kind": "office",
+      "canonical_name": "Visa office in Jakarta, Indonesia",
+      "ircc_aliases": [
+        "visa office in jakarta"
+      ],
+      "common_variants": [
+        "jakarta visa office",
+        "canadian visa office in jakarta",
+        "visa section in jakarta"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 310,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-kingston",
+      "kind": "office",
+      "canonical_name": "Visa office in Kingston, Jamaica",
+      "ircc_aliases": [
+        "visa office in kingston"
+      ],
+      "common_variants": [
+        "kingston visa office",
+        "canadian visa office in kingston",
+        "visa section in kingston"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 320,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-lima",
+      "kind": "office",
+      "canonical_name": "Visa office in Lima, Peru",
+      "ircc_aliases": [
+        "visa office in lima"
+      ],
+      "common_variants": [
+        "lima visa office",
+        "canadian visa office in lima",
+        "visa section in lima"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 330,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-london",
+      "kind": "office",
+      "canonical_name": "Visa office in London, United Kingdom",
+      "ircc_aliases": [],
+      "common_variants": [
+        "canadian visa office in london, united kingdom"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": "London, United Kingdom. Always write the country, since IRCC has an appointment office in London, Ontario.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 340,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-los-angeles",
+      "kind": "office",
+      "canonical_name": "Visa office in Los Angeles, United States",
+      "ircc_aliases": [
+        "visa office in los angeles"
+      ],
+      "common_variants": [
+        "los angeles visa office",
+        "canadian visa office in los angeles",
+        "visa section in los angeles"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 350,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-manila",
+      "kind": "office",
+      "canonical_name": "Visa office in Manila, Philippines",
+      "ircc_aliases": [
+        "visa office in manila"
+      ],
+      "common_variants": [
+        "manila visa office",
+        "canadian visa office in manila",
+        "visa section in manila"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": "Also serves Japan, the Republic of Korea and Taiwan.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 360,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-mexico-city",
+      "kind": "office",
+      "canonical_name": "Visa office in Mexico City, Mexico",
+      "ircc_aliases": [
+        "visa office in mexico city"
+      ],
+      "common_variants": [
+        "mexico city visa office",
+        "canadian visa office in mexico city",
+        "visa section in mexico city"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 370,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-nairobi",
+      "kind": "office",
+      "canonical_name": "Visa office in Nairobi, Kenya",
+      "ircc_aliases": [
+        "visa office in nairobi"
+      ],
+      "common_variants": [
+        "nairobi visa office",
+        "canadian visa office in nairobi",
+        "visa section in nairobi"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": "For Nigeria, Nairobi handles temporary residents and Accra permanent residents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 380,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-new-delhi",
+      "kind": "office",
+      "canonical_name": "Visa office in New Delhi, India",
+      "ircc_aliases": [
+        "visa office in new delhi"
+      ],
+      "common_variants": [
+        "new delhi visa office",
+        "canadian visa office in new delhi",
+        "visa section in new delhi"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 390,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-new-york",
+      "kind": "office",
+      "canonical_name": "Visa office in New York, United States",
+      "ircc_aliases": [
+        "visa office in new york"
+      ],
+      "common_variants": [
+        "new york visa office",
+        "canadian visa office in new york",
+        "visa section in new york"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 400,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-paris",
+      "kind": "office",
+      "canonical_name": "Visa office in Paris, France",
+      "ircc_aliases": [
+        "visa office in paris"
+      ],
+      "common_variants": [
+        "paris visa office",
+        "canadian visa office in paris",
+        "visa section in paris"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 410,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-port-of-spain",
+      "kind": "office",
+      "canonical_name": "Visa office in Port of Spain, Trinidad and Tobago",
+      "ircc_aliases": [
+        "visa office in port of spain"
+      ],
+      "common_variants": [
+        "port of spain visa office",
+        "canadian visa office in port of spain",
+        "visa section in port of spain",
+        "visa office in port-of-spain",
+        "port-of-spain visa office",
+        "canadian visa office in port-of-spain",
+        "visa section in port-of-spain"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 420,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-port-au-prince",
+      "kind": "office",
+      "canonical_name": "Visa office in Port-au-Prince, Haiti",
+      "ircc_aliases": [
+        "visa office in port-au-prince"
+      ],
+      "common_variants": [
+        "port-au-prince visa office",
+        "canadian visa office in port-au-prince",
+        "visa section in port-au-prince",
+        "visa office in port au prince",
+        "port au prince visa office",
+        "canadian visa office in port au prince",
+        "visa section in port au prince"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 430,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-pretoria",
+      "kind": "office",
+      "canonical_name": "Visa office in Pretoria, South Africa",
+      "ircc_aliases": [
+        "visa office in pretoria"
+      ],
+      "common_variants": [
+        "pretoria visa office",
+        "canadian visa office in pretoria",
+        "visa section in pretoria"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 440,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-rabat",
+      "kind": "office",
+      "canonical_name": "Visa office in Rabat, Morocco",
+      "ircc_aliases": [
+        "visa office in rabat"
+      ],
+      "common_variants": [
+        "rabat visa office",
+        "canadian visa office in rabat",
+        "visa section in rabat"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 450,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-riyadh",
+      "kind": "office",
+      "canonical_name": "Visa office in Riyadh, Saudi Arabia",
+      "ircc_aliases": [
+        "visa office in riyadh"
+      ],
+      "common_variants": [
+        "riyadh visa office",
+        "canadian visa office in riyadh",
+        "visa section in riyadh"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 460,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-rome",
+      "kind": "office",
+      "canonical_name": "Visa office in Rome, Italy",
+      "ircc_aliases": [
+        "visa office in rome"
+      ],
+      "common_variants": [
+        "rome visa office",
+        "canadian visa office in rome",
+        "visa section in rome"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 470,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-sao-paulo",
+      "kind": "office",
+      "canonical_name": "Visa office in Sao Paulo, Brazil",
+      "ircc_aliases": [
+        "visa office in sao paulo"
+      ],
+      "common_variants": [
+        "sao paulo visa office",
+        "canadian visa office in sao paulo",
+        "visa section in sao paulo",
+        "visa office in são paulo",
+        "são paulo visa office",
+        "canadian visa office in são paulo",
+        "visa section in são paulo"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 480,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-shanghai",
+      "kind": "office",
+      "canonical_name": "Visa office in Shanghai, China",
+      "ircc_aliases": [
+        "visa office in shanghai"
+      ],
+      "common_variants": [
+        "shanghai visa office",
+        "canadian visa office in shanghai",
+        "visa section in shanghai"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 490,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-singapore",
+      "kind": "office",
+      "canonical_name": "Visa office in Singapore, Singapore",
+      "ircc_aliases": [
+        "visa office in singapore"
+      ],
+      "common_variants": [
+        "singapore visa office",
+        "canadian visa office in singapore",
+        "visa section in singapore"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": "For Bhutan and Nepal, Bangkok handles temporary residents and Singapore permanent residents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 500,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-sydney",
+      "kind": "office",
+      "canonical_name": "Visa office in Sydney, Australia",
+      "ircc_aliases": [],
+      "common_variants": [
+        "canadian visa office in sydney, australia"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": "Sydney, Australia. Always write the country, since CPC Sydney and CIO Sydney are in Nova Scotia.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 510,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-tel-aviv",
+      "kind": "office",
+      "canonical_name": "Visa office in Tel Aviv, Israel",
+      "ircc_aliases": [
+        "visa office in tel aviv"
+      ],
+      "common_variants": [
+        "tel aviv visa office",
+        "canadian visa office in tel aviv",
+        "visa section in tel aviv"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 520,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-tunis",
+      "kind": "office",
+      "canonical_name": "Visa office in Tunis, Tunisia",
+      "ircc_aliases": [
+        "visa office in tunis"
+      ],
+      "common_variants": [
+        "tunis visa office",
+        "canadian visa office in tunis",
+        "visa section in tunis"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 530,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-vienna",
+      "kind": "office",
+      "canonical_name": "Visa office in Vienna, Austria",
+      "ircc_aliases": [
+        "visa office in vienna"
+      ],
+      "common_variants": [
+        "vienna visa office",
+        "canadian visa office in vienna",
+        "visa section in vienna"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": "Also serves Germany.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 540,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-warsaw",
+      "kind": "office",
+      "canonical_name": "Visa office in Warsaw, Poland",
+      "ircc_aliases": [
+        "visa office in warsaw"
+      ],
+      "common_variants": [
+        "warsaw visa office",
+        "canadian visa office in warsaw",
+        "visa section in warsaw"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": "Also serves Russia, Ukraine and Central Asia.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices/paris.html"
+      ],
+      "source_note": "Visa offices outside Canada, page modified 2026-07-17, read live 2026-11-16 (43 distinct offices across 261 rows). The canonical form follows the IRCC page title Visa office in Paris, France.",
+      "sort_order": 550,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-washington",
+      "kind": "office",
+      "canonical_name": "Visa office in Washington, United States",
+      "ircc_aliases": [
+        "visa office in washington"
+      ],
+      "common_variants": [
+        "washington visa office",
+        "canadian visa office in washington",
+        "visa section in washington"
+      ],
+      "status": "former",
+      "replaced_by": "office-vo-new-york",
+      "successor_note": "Visa office in Los Angeles or New York, United States (the 2026 list names both)",
+      "organization": "IRCC",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "Listed as an overseas office in the 2022 deputy minister binder and absent from the 2026 visa office list. The mission may still exist, but IRCC no longer lists it as a processing visa office. The 2026 list names more than one office for United States, so the flag names them and replaced_by holds the first.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2022/operations-sector.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html"
+      ],
+      "source_note": "Binder dated 2022-11-14. Visa office list read live 2026-11-16.",
+      "sort_order": 560,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-miami",
+      "kind": "office",
+      "canonical_name": "Visa office in Miami, United States",
+      "ircc_aliases": [
+        "visa office in miami"
+      ],
+      "common_variants": [
+        "miami visa office",
+        "canadian visa office in miami",
+        "visa section in miami"
+      ],
+      "status": "former",
+      "replaced_by": "office-vo-new-york",
+      "successor_note": "Visa office in Los Angeles or New York, United States (the 2026 list names both)",
+      "organization": "IRCC",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "Listed as an overseas office in the 2022 deputy minister binder and absent from the 2026 visa office list. The mission may still exist, but IRCC no longer lists it as a processing visa office. The 2026 list names more than one office for United States, so the flag names them and replaced_by holds the first.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2022/operations-sector.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html"
+      ],
+      "source_note": "Binder dated 2022-11-14. Visa office list read live 2026-11-16.",
+      "sort_order": 570,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-brussels",
+      "kind": "office",
+      "canonical_name": "Visa office in Brussels, Belgium",
+      "ircc_aliases": [
+        "visa office in brussels"
+      ],
+      "common_variants": [
+        "brussels visa office",
+        "canadian visa office in brussels",
+        "visa section in brussels"
+      ],
+      "status": "former",
+      "replaced_by": "office-vo-paris",
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "Listed as an overseas office in the 2022 deputy minister binder and absent from the 2026 visa office list. The mission may still exist, but IRCC no longer lists it as a processing visa office. replaced_by is the office the 2026 list names for Belgium.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2022/operations-sector.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html"
+      ],
+      "source_note": "Binder dated 2022-11-14. Visa office list read live 2026-11-16.",
+      "sort_order": 580,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-berlin",
+      "kind": "office",
+      "canonical_name": "Visa office in Berlin, Germany",
+      "ircc_aliases": [
+        "visa office in berlin"
+      ],
+      "common_variants": [
+        "berlin visa office",
+        "canadian visa office in berlin",
+        "visa section in berlin"
+      ],
+      "status": "former",
+      "replaced_by": "office-vo-vienna",
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "Listed as an overseas office in the 2022 deputy minister binder and absent from the 2026 visa office list. The mission may still exist, but IRCC no longer lists it as a processing visa office. replaced_by is the office the 2026 list names for Germany.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2022/operations-sector.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html"
+      ],
+      "source_note": "Binder dated 2022-11-14. Visa office list read live 2026-11-16.",
+      "sort_order": 590,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-geneva",
+      "kind": "office",
+      "canonical_name": "Visa office in Geneva, Switzerland",
+      "ircc_aliases": [
+        "visa office in geneva"
+      ],
+      "common_variants": [
+        "geneva visa office",
+        "canadian visa office in geneva",
+        "visa section in geneva"
+      ],
+      "status": "former",
+      "replaced_by": "office-vo-paris",
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "Listed as an overseas office in the 2022 deputy minister binder and absent from the 2026 visa office list. The mission may still exist, but IRCC no longer lists it as a processing visa office. replaced_by is the office the 2026 list names for Switzerland.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2022/operations-sector.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html"
+      ],
+      "source_note": "Binder dated 2022-11-14. Visa office list read live 2026-11-16.",
+      "sort_order": 600,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-kyiv",
+      "kind": "office",
+      "canonical_name": "Visa office in Kyiv, Ukraine",
+      "ircc_aliases": [
+        "visa office in kyiv"
+      ],
+      "common_variants": [
+        "kyiv visa office",
+        "canadian visa office in kyiv",
+        "visa section in kyiv",
+        "visa office in kiev",
+        "kiev visa office"
+      ],
+      "status": "former",
+      "replaced_by": "office-vo-warsaw",
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "Listed as an overseas office in the 2022 deputy minister binder and absent from the 2026 visa office list. The mission may still exist, but IRCC no longer lists it as a processing visa office. replaced_by is the office the 2026 list names for Ukraine.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2022/operations-sector.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html"
+      ],
+      "source_note": "Binder dated 2022-11-14. Visa office list read live 2026-11-16.",
+      "sort_order": 610,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-moscow",
+      "kind": "office",
+      "canonical_name": "Visa office in Moscow, Russia",
+      "ircc_aliases": [
+        "visa office in moscow"
+      ],
+      "common_variants": [
+        "moscow visa office",
+        "canadian visa office in moscow",
+        "visa section in moscow"
+      ],
+      "status": "former",
+      "replaced_by": "office-vo-warsaw",
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "Listed as an overseas office in the 2022 deputy minister binder and absent from the 2026 visa office list. The mission may still exist, but IRCC no longer lists it as a processing visa office. replaced_by is the office the 2026 list names for Russia.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2022/operations-sector.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html"
+      ],
+      "source_note": "Binder dated 2022-11-14. Visa office list read live 2026-11-16.",
+      "sort_order": 620,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-algiers",
+      "kind": "office",
+      "canonical_name": "Visa office in Algiers, Algeria",
+      "ircc_aliases": [
+        "visa office in algiers"
+      ],
+      "common_variants": [
+        "algiers visa office",
+        "canadian visa office in algiers",
+        "visa section in algiers"
+      ],
+      "status": "former",
+      "replaced_by": "office-vo-paris",
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "Listed as an overseas office in the 2022 deputy minister binder and absent from the 2026 visa office list. The mission may still exist, but IRCC no longer lists it as a processing visa office. replaced_by is the office the 2026 list names for Algeria.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2022/operations-sector.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html"
+      ],
+      "source_note": "Binder dated 2022-11-14. Visa office list read live 2026-11-16.",
+      "sort_order": 630,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-chandigarh",
+      "kind": "office",
+      "canonical_name": "Visa office in Chandigarh, India",
+      "ircc_aliases": [
+        "visa office in chandigarh"
+      ],
+      "common_variants": [
+        "chandigarh visa office",
+        "canadian visa office in chandigarh",
+        "visa section in chandigarh"
+      ],
+      "status": "former",
+      "replaced_by": "office-vo-new-delhi",
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "Listed as an overseas office in the 2022 deputy minister binder and absent from the 2026 visa office list. The mission may still exist, but IRCC no longer lists it as a processing visa office. replaced_by is the office the 2026 list names for India.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2022/operations-sector.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html"
+      ],
+      "source_note": "Binder dated 2022-11-14. Visa office list read live 2026-11-16.",
+      "sort_order": 640,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-bangalore",
+      "kind": "office",
+      "canonical_name": "Visa office in Bangalore, India",
+      "ircc_aliases": [
+        "visa office in bangalore"
+      ],
+      "common_variants": [
+        "bangalore visa office",
+        "canadian visa office in bangalore",
+        "visa section in bangalore",
+        "visa office in bengaluru",
+        "bengaluru visa office"
+      ],
+      "status": "former",
+      "replaced_by": "office-vo-new-delhi",
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "Listed as an overseas office in the 2022 deputy minister binder and absent from the 2026 visa office list. The mission may still exist, but IRCC no longer lists it as a processing visa office. replaced_by is the office the 2026 list names for India.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2022/operations-sector.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html"
+      ],
+      "source_note": "Binder dated 2022-11-14. Visa office list read live 2026-11-16.",
+      "sort_order": 650,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-seoul",
+      "kind": "office",
+      "canonical_name": "Visa office in Seoul, Republic of Korea",
+      "ircc_aliases": [
+        "visa office in seoul"
+      ],
+      "common_variants": [
+        "seoul visa office",
+        "canadian visa office in seoul",
+        "visa section in seoul"
+      ],
+      "status": "former",
+      "replaced_by": "office-vo-manila",
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "Listed as an overseas office in the 2022 deputy minister binder and absent from the 2026 visa office list. The mission may still exist, but IRCC no longer lists it as a processing visa office. replaced_by is the office the 2026 list names for Republic of Korea.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2022/operations-sector.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html"
+      ],
+      "source_note": "Binder dated 2022-11-14. Visa office list read live 2026-11-16.",
+      "sort_order": 660,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-tokyo",
+      "kind": "office",
+      "canonical_name": "Visa office in Tokyo, Japan",
+      "ircc_aliases": [
+        "visa office in tokyo"
+      ],
+      "common_variants": [
+        "tokyo visa office",
+        "canadian visa office in tokyo",
+        "visa section in tokyo"
+      ],
+      "status": "former",
+      "replaced_by": "office-vo-manila",
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "Listed as an overseas office in the 2022 deputy minister binder and absent from the 2026 visa office list. The mission may still exist, but IRCC no longer lists it as a processing visa office. replaced_by is the office the 2026 list names for Japan.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2022/operations-sector.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html"
+      ],
+      "source_note": "Binder dated 2022-11-14. Visa office list read live 2026-11-16.",
+      "sort_order": 670,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-canberra",
+      "kind": "office",
+      "canonical_name": "Visa office in Canberra, Australia",
+      "ircc_aliases": [
+        "visa office in canberra"
+      ],
+      "common_variants": [
+        "canberra visa office",
+        "canadian visa office in canberra",
+        "visa section in canberra"
+      ],
+      "status": "former",
+      "replaced_by": "office-vo-sydney",
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "Listed as an overseas office in the 2022 deputy minister binder and absent from the 2026 visa office list. The mission may still exist, but IRCC no longer lists it as a processing visa office. replaced_by is the office the 2026 list names for Australia.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2022/operations-sector.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html"
+      ],
+      "source_note": "Binder dated 2022-11-14. Visa office list read live 2026-11-16.",
+      "sort_order": 680,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-abuja",
+      "kind": "office",
+      "canonical_name": "Visa office in Abuja, Nigeria",
+      "ircc_aliases": [
+        "visa office in abuja"
+      ],
+      "common_variants": [
+        "abuja visa office",
+        "canadian visa office in abuja",
+        "visa section in abuja"
+      ],
+      "status": "former",
+      "replaced_by": "office-vo-nairobi",
+      "successor_note": "Visa office in Nairobi, Kenya (temporary residents) or Accra, Ghana (permanent residents)",
+      "organization": "IRCC",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "Listed as an overseas office in the 2022 deputy minister binder and absent from the 2026 visa office list. The mission may still exist, but IRCC no longer lists it as a processing visa office. The 2026 list names more than one office for Nigeria, so the flag names them and replaced_by holds the first.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2022/operations-sector.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html"
+      ],
+      "source_note": "Binder dated 2022-11-14. Visa office list read live 2026-11-16.",
+      "sort_order": 690,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-lagos",
+      "kind": "office",
+      "canonical_name": "Visa office in Lagos, Nigeria",
+      "ircc_aliases": [
+        "visa office in lagos"
+      ],
+      "common_variants": [
+        "lagos visa office",
+        "canadian visa office in lagos",
+        "visa section in lagos"
+      ],
+      "status": "former",
+      "replaced_by": "office-vo-nairobi",
+      "successor_note": "Visa office in Nairobi, Kenya (temporary residents) or Accra, Ghana (permanent residents)",
+      "organization": "IRCC",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "Listed as an overseas office in the 2022 deputy minister binder and absent from the 2026 visa office list. The mission may still exist, but IRCC no longer lists it as a processing visa office. The 2026 list names more than one office for Nigeria, so the flag names them and replaced_by holds the first.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2022/operations-sector.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html"
+      ],
+      "source_note": "Binder dated 2022-11-14. Visa office list read live 2026-11-16.",
+      "sort_order": 700,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-vo-addis-ababa",
+      "kind": "office",
+      "canonical_name": "Visa office in Addis Ababa, Ethiopia",
+      "ircc_aliases": [
+        "visa office in addis ababa"
+      ],
+      "common_variants": [
+        "addis ababa visa office",
+        "canadian visa office in addis ababa",
+        "visa section in addis ababa"
+      ],
+      "status": "former",
+      "replaced_by": "office-vo-nairobi",
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "Listed as an overseas office in the 2022 deputy minister binder and absent from the 2026 visa office list. The mission may still exist, but IRCC no longer lists it as a processing visa office. replaced_by is the office the 2026 list names for Ethiopia.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2022/operations-sector.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html"
+      ],
+      "source_note": "Binder dated 2022-11-14. Visa office list read live 2026-11-16.",
+      "sort_order": 710,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-domestic-calgary",
+      "kind": "office",
+      "canonical_name": "IRCC office in Calgary, Alberta",
+      "ircc_aliases": [
+        "ircc office in calgary"
+      ],
+      "common_variants": [
+        "calgary ircc office"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "By appointment only. A letter is addressed here only when this office asked for the documents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
+      ],
+      "source_note": "IRCC offices in Canada: By appointment only, page modified 2025-03-04, read 2026-11-16.",
+      "sort_order": 720,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-domestic-edmonton",
+      "kind": "office",
+      "canonical_name": "IRCC office in Edmonton, Alberta",
+      "ircc_aliases": [
+        "ircc office in edmonton"
+      ],
+      "common_variants": [
+        "edmonton ircc office"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "By appointment only. Not the Case Processing Centre in the same city.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
+      ],
+      "source_note": "IRCC offices in Canada: By appointment only, page modified 2025-03-04, read 2026-11-16.",
+      "sort_order": 730,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-domestic-vancouver-immigration",
+      "kind": "office",
+      "canonical_name": "IRCC office in Vancouver (Immigration office), British Columbia",
+      "ircc_aliases": [
+        "ircc office in vancouver (immigration office)"
+      ],
+      "common_variants": [
+        "vancouver immigration office"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "By appointment only. A letter is addressed here only when this office asked for the documents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
+      ],
+      "source_note": "IRCC offices in Canada: By appointment only, page modified 2025-03-04, read 2026-11-16.",
+      "sort_order": 740,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-domestic-vancouver-citizenship",
+      "kind": "office",
+      "canonical_name": "IRCC office in Vancouver (Citizenship office), British Columbia",
+      "ircc_aliases": [
+        "ircc office in vancouver (citizenship office)"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "By appointment only. A letter is addressed here only when this office asked for the documents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
+      ],
+      "source_note": "IRCC offices in Canada: By appointment only, page modified 2025-03-04, read 2026-11-16.",
+      "sort_order": 750,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-domestic-surrey-citizenship",
+      "kind": "office",
+      "canonical_name": "IRCC office in Surrey (Citizenship office), British Columbia",
+      "ircc_aliases": [
+        "ircc office in surrey (citizenship office)",
+        "ircc office in surrey"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "By appointment only. A letter is addressed here only when this office asked for the documents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
+      ],
+      "source_note": "IRCC offices in Canada: By appointment only, page modified 2025-03-04, read 2026-11-16.",
+      "sort_order": 760,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-domestic-winnipeg",
+      "kind": "office",
+      "canonical_name": "IRCC office in Winnipeg, Manitoba",
+      "ircc_aliases": [
+        "ircc office in winnipeg"
+      ],
+      "common_variants": [
+        "winnipeg ircc office"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "By appointment only. A letter is addressed here only when this office asked for the documents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
+      ],
+      "source_note": "IRCC offices in Canada: By appointment only, page modified 2025-03-04, read 2026-11-16.",
+      "sort_order": 770,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-domestic-fredericton",
+      "kind": "office",
+      "canonical_name": "IRCC office in Fredericton, New Brunswick",
+      "ircc_aliases": [
+        "ircc office in fredericton"
+      ],
+      "common_variants": [
+        "fredericton ircc office"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "By appointment only. A letter is addressed here only when this office asked for the documents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
+      ],
+      "source_note": "IRCC offices in Canada: By appointment only, page modified 2025-03-04, read 2026-11-16.",
+      "sort_order": 780,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-domestic-st-johns",
+      "kind": "office",
+      "canonical_name": "IRCC office in St. John's, Newfoundland and Labrador",
+      "ircc_aliases": [
+        "ircc office in st. john's"
+      ],
+      "common_variants": [
+        "st. john's ircc office"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "By appointment only. A letter is addressed here only when this office asked for the documents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
+      ],
+      "source_note": "IRCC offices in Canada: By appointment only, page modified 2025-03-04, read 2026-11-16.",
+      "sort_order": 790,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-domestic-yellowknife",
+      "kind": "office",
+      "canonical_name": "IRCC office in Yellowknife, Northwest Territories",
+      "ircc_aliases": [
+        "ircc office in yellowknife"
+      ],
+      "common_variants": [
+        "yellowknife ircc office"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "By appointment only. A letter is addressed here only when this office asked for the documents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
+      ],
+      "source_note": "IRCC offices in Canada: By appointment only, page modified 2025-03-04, read 2026-11-16.",
+      "sort_order": 800,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-domestic-halifax",
+      "kind": "office",
+      "canonical_name": "IRCC office in Halifax, Nova Scotia",
+      "ircc_aliases": [
+        "ircc office in halifax"
+      ],
+      "common_variants": [
+        "halifax ircc office"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "By appointment only. A letter is addressed here only when this office asked for the documents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
+      ],
+      "source_note": "IRCC offices in Canada: By appointment only, page modified 2025-03-04, read 2026-11-16.",
+      "sort_order": 810,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-domestic-hamilton",
+      "kind": "office",
+      "canonical_name": "IRCC office in Hamilton, Ontario",
+      "ircc_aliases": [
+        "ircc office in hamilton"
+      ],
+      "common_variants": [
+        "hamilton ircc office"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "By appointment only. A letter is addressed here only when this office asked for the documents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
+      ],
+      "source_note": "IRCC offices in Canada: By appointment only, page modified 2025-03-04, read 2026-11-16.",
+      "sort_order": 820,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-domestic-kitchener",
+      "kind": "office",
+      "canonical_name": "IRCC office in Kitchener, Ontario",
+      "ircc_aliases": [
+        "ircc office in kitchener"
+      ],
+      "common_variants": [
+        "kitchener ircc office"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "By appointment only. A letter is addressed here only when this office asked for the documents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
+      ],
+      "source_note": "IRCC offices in Canada: By appointment only, page modified 2025-03-04, read 2026-11-16.",
+      "sort_order": 830,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-domestic-london-ontario",
+      "kind": "office",
+      "canonical_name": "IRCC office in London, Ontario",
+      "ircc_aliases": [],
+      "common_variants": [
+        "london, ontario ircc office"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "By appointment only. Always write the province, since the visa office in London, United Kingdom is a different office.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
+      ],
+      "source_note": "IRCC offices in Canada: By appointment only, page modified 2025-03-04, read 2026-11-16.",
+      "sort_order": 840,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-domestic-niagara-falls",
+      "kind": "office",
+      "canonical_name": "IRCC office in Niagara Falls, Ontario",
+      "ircc_aliases": [
+        "ircc office in niagara falls"
+      ],
+      "common_variants": [
+        "niagara falls ircc office"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "By appointment only. A letter is addressed here only when this office asked for the documents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
+      ],
+      "source_note": "IRCC offices in Canada: By appointment only, page modified 2025-03-04, read 2026-11-16.",
+      "sort_order": 850,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-domestic-ottawa",
+      "kind": "office",
+      "canonical_name": "IRCC office in Ottawa, Ontario",
+      "ircc_aliases": [
+        "ircc office in ottawa"
+      ],
+      "common_variants": [
+        "ottawa ircc office"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "By appointment only. Not the Case Processing Centre in the same city.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
+      ],
+      "source_note": "IRCC offices in Canada: By appointment only, page modified 2025-03-04, read 2026-11-16.",
+      "sort_order": 860,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-domestic-mississauga-citizenship",
+      "kind": "office",
+      "canonical_name": "IRCC office in Mississauga (Citizenship office), Ontario",
+      "ircc_aliases": [
+        "ircc office in mississauga (citizenship office)"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "By appointment only. A letter is addressed here only when this office asked for the documents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
+      ],
+      "source_note": "IRCC offices in Canada: By appointment only, page modified 2025-03-04, read 2026-11-16.",
+      "sort_order": 870,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-domestic-toronto-scarborough",
+      "kind": "office",
+      "canonical_name": "IRCC office in Toronto (Scarborough), Ontario",
+      "ircc_aliases": [
+        "ircc office in toronto (scarborough)",
+        "ircc office in scarborough"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "By appointment only. A letter is addressed here only when this office asked for the documents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
+      ],
+      "source_note": "IRCC offices in Canada: By appointment only, page modified 2025-03-04, read 2026-11-16.",
+      "sort_order": 880,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-domestic-toronto-etobicoke",
+      "kind": "office",
+      "canonical_name": "IRCC office in Toronto (Etobicoke), Ontario",
+      "ircc_aliases": [
+        "ircc office in toronto (etobicoke)",
+        "ircc office in etobicoke"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "By appointment only. A letter is addressed here only when this office asked for the documents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
+      ],
+      "source_note": "IRCC offices in Canada: By appointment only, page modified 2025-03-04, read 2026-11-16.",
+      "sort_order": 890,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-domestic-windsor",
+      "kind": "office",
+      "canonical_name": "IRCC office in Windsor, Ontario",
+      "ircc_aliases": [
+        "ircc office in windsor"
+      ],
+      "common_variants": [
+        "windsor ircc office"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "By appointment only. A letter is addressed here only when this office asked for the documents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
+      ],
+      "source_note": "IRCC offices in Canada: By appointment only, page modified 2025-03-04, read 2026-11-16.",
+      "sort_order": 900,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-domestic-charlottetown",
+      "kind": "office",
+      "canonical_name": "IRCC office in Charlottetown, Prince Edward Island",
+      "ircc_aliases": [
+        "ircc office in charlottetown"
+      ],
+      "common_variants": [
+        "charlottetown ircc office"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "By appointment only. A letter is addressed here only when this office asked for the documents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
+      ],
+      "source_note": "IRCC offices in Canada: By appointment only, page modified 2025-03-04, read 2026-11-16.",
+      "sort_order": 910,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-domestic-montreal",
+      "kind": "office",
+      "canonical_name": "IRCC office in Montréal, Quebec",
+      "ircc_aliases": [
+        "ircc office in montréal"
+      ],
+      "common_variants": [
+        "montréal ircc office",
+        "ircc office in montreal",
+        "montreal ircc office"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "By appointment only. A letter is addressed here only when this office asked for the documents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
+      ],
+      "source_note": "IRCC offices in Canada: By appointment only, page modified 2025-03-04, read 2026-11-16.",
+      "sort_order": 920,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-domestic-saskatoon",
+      "kind": "office",
+      "canonical_name": "IRCC office in Saskatoon, Saskatchewan",
+      "ircc_aliases": [
+        "ircc office in saskatoon"
+      ],
+      "common_variants": [
+        "saskatoon ircc office"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "By appointment only. A letter is addressed here only when this office asked for the documents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
+      ],
+      "source_note": "IRCC offices in Canada: By appointment only, page modified 2025-03-04, read 2026-11-16.",
+      "sort_order": 930,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-domestic-whitehorse",
+      "kind": "office",
+      "canonical_name": "IRCC office in Whitehorse, Yukon",
+      "ircc_aliases": [
+        "ircc office in whitehorse"
+      ],
+      "common_variants": [
+        "whitehorse ircc office"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "on_request",
+      "visa_codes": [],
+      "note": "By appointment only. A letter is addressed here only when this office asked for the documents.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
+      ],
+      "source_note": "IRCC offices in Canada: By appointment only, page modified 2025-03-04, read 2026-11-16.",
+      "sort_order": 940,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "org-ircc",
+      "kind": "organization",
+      "canonical_name": "Immigration, Refugees and Citizenship Canada",
+      "ircc_aliases": [
+        "ircc"
+      ],
+      "common_variants": [
+        "immigration refugees and citizenship canada"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 950,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "org-cic",
+      "kind": "organization",
+      "canonical_name": "Citizenship and Immigration Canada",
+      "ircc_aliases": [],
+      "common_variants": [
+        "cic"
+      ],
+      "status": "former",
+      "replaced_by": "org-ircc",
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "The department's former applied title. The Minister of Citizenship and Immigration and federal-provincial agreements (the 2022 PEI AIP agreement) still use the old wording, so a hit is a soft flag, never a hard fail. CIC also appears in IRCC web addresses (cic.gc.ca), so it matches as a whole word outside URLs only.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/agreements/federal-provincial-territorial/prince-edward-island/agreement-canada-prince-edward-island-atlantic-immigration-program.html"
+      ],
+      "source_note": "Agreement dated 2022-02-01, read 2026-11-16. The date of the rename was not read on an IRCC page.",
+      "sort_order": 960,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "org-irb",
+      "kind": "organization",
+      "canonical_name": "Immigration and Refugee Board of Canada",
+      "ircc_aliases": [
+        "immigration and refugee board",
+        "irb"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRB",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": null,
+      "source_urls": [
+        "https://irb-cisr.gc.ca/en/board/pages/index.aspx"
+      ],
+      "source_note": "IRB About the Board, read 2026-11-16.",
+      "sort_order": 970,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-irb-rpd",
+      "kind": "office",
+      "canonical_name": "Refugee Protection Division",
+      "ircc_aliases": [
+        "rpd"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRB",
+      "letter_addressee": "yes",
+      "visa_codes": [
+        "REF-CLAIM"
+      ],
+      "note": "Hears and decides claims for refugee protection made in Canada. The addressee for REF-CLAIM documents.",
+      "source_urls": [
+        "https://irb-cisr.gc.ca/en/board/pages/index.aspx"
+      ],
+      "source_note": "IRB About the Board, read 2026-11-16.",
+      "sort_order": 980,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-irb-rad",
+      "kind": "office",
+      "canonical_name": "Refugee Appeal Division",
+      "ircc_aliases": [
+        "rad"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRB",
+      "letter_addressee": "yes",
+      "visa_codes": [
+        "REF-CLAIM"
+      ],
+      "note": "Decides appeals from RPD decisions. An appeal is not a document type here yet.",
+      "source_urls": [
+        "https://irb-cisr.gc.ca/en/board/pages/index.aspx"
+      ],
+      "source_note": "IRB About the Board, read 2026-11-16.",
+      "sort_order": 990,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-irb-id",
+      "kind": "office",
+      "canonical_name": "Immigration Division",
+      "ircc_aliases": [],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRB",
+      "letter_addressee": "yes",
+      "visa_codes": [],
+      "note": "Admissibility hearings and detention reviews, outside the 17 codes. ID is left out as an alias, since it collides with ordinary text.",
+      "source_urls": [
+        "https://irb-cisr.gc.ca/en/board/pages/index.aspx"
+      ],
+      "source_note": "IRB About the Board, read 2026-11-16.",
+      "sort_order": 1000,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "office-irb-iad",
+      "kind": "office",
+      "canonical_name": "Immigration Appeal Division",
+      "ircc_aliases": [
+        "iad"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRB",
+      "letter_addressee": "yes",
+      "visa_codes": [
+        "FAM-SPOUSE",
+        "FAM-PGP",
+        "FAM-OTHER"
+      ],
+      "note": "Hears family class sponsorship appeals, removal order appeals and residency obligation appeals.",
+      "source_urls": [
+        "https://irb-cisr.gc.ca/en/board/pages/index.aspx"
+      ],
+      "source_note": "IRB About the Board, read 2026-11-16.",
+      "sort_order": 1010,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "org-cbsa",
+      "kind": "organization",
+      "canonical_name": "Canada Border Services Agency",
+      "ircc_aliases": [
+        "cbsa"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "CBSA",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "Port of entry and inland refugee claims, detention and removals. Not the addressee of an IRCC submission.",
+      "source_urls": [
+        "https://irb-cisr.gc.ca/en/board/pages/index.aspx"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1020,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "org-esdc",
+      "kind": "organization",
+      "canonical_name": "Employment and Social Development Canada",
+      "ircc_aliases": [
+        "esdc"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "ESDC",
+      "letter_addressee": "no",
+      "visa_codes": [],
+      "note": "Decides LMIA applications. IRCC decides the work permit.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2026/temporary-workers.html"
+      ],
+      "source_note": "Binder dated 2026-07-27, read 2026-11-16.",
+      "sort_order": 1030,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-visitor-visa",
+      "kind": "program",
+      "canonical_name": "Visitor visa (temporary resident visa)",
+      "ircc_aliases": [
+        "visitor visa",
+        "temporary resident visa",
+        "trv"
+      ],
+      "common_variants": [
+        "tourist visa",
+        "visit visa"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "TR-VISIT",
+        "TR-SUPER",
+        "TR-STUDY",
+        "TR-WP-EMP",
+        "TR-WP-OPEN"
+      ],
+      "note": "IRCC issues a visitor visa or an eTA automatically with an initial study or work permit applied for before travel, so a study or work permit letter may name it. A PGWP is applied for in Canada, and a visa then needs its own application. A super visa is a multiple entry temporary resident visa, so a super visa letter may name it too.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/case-processing-centre-ottawa-ontario.html",
+        "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=1040&top=23",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/other-goals/super-visa-2026.html"
+      ],
+      "source_note": "Read 2026-11-16 (cached copy dated 2026-11-05). TRV is the form on the CPC Ottawa page. Help Centre answer 1040, modified 2026-11-03, read 2026-11-16. Ministerial Instructions regarding the Parent and Grandparent Super Visa (2026), in force 2026-03-31, define the Super Visa as a multiple entry temporary resident visa, read 2026-11-19 (TR-SUPER added after the false flag on F-F14 case ff14-010).",
+      "sort_order": 1040,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-eta",
+      "kind": "program",
+      "canonical_name": "Electronic travel authorization (eTA)",
+      "ircc_aliases": [
+        "electronic travel authorization",
+        "eta"
+      ],
+      "common_variants": [
+        "electronic travel authorisation"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "TR-VISIT",
+        "TR-STUDY",
+        "TR-WP-EMP",
+        "TR-WP-OPEN"
+      ],
+      "note": "Issued automatically with an initial study or work permit applied for before travel, see the visitor visa row. Not a program of TR-SUPER: a visa-exempt super visa applicant is directed to apply for an eTA, if one is needed, only after the super visa is approved, then gets a letter (super visa How to apply page, read 2026-11-19), so a letter that presents the eTA as the application is flagged.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html",
+        "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=1040&top=23",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/apply.html"
+      ],
+      "source_note": "Read 2026-11-16. Help Centre answer 1040, modified 2026-11-03.",
+      "sort_order": 1050,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-business-visitor",
+      "kind": "program",
+      "canonical_name": "Business visitor",
+      "ircc_aliases": [
+        "business visitors"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "TR-VISIT"
+      ],
+      "note": "Work without a work permit, listed in the 2026 binder.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2026/temporary-workers.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1060,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-super-visa",
+      "kind": "program",
+      "canonical_name": "Parent and grandparent super visa",
+      "ircc_aliases": [
+        "super visa",
+        "super visa for parents and grandparents"
+      ],
+      "common_variants": [
+        "supervisa"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "TR-SUPER"
+      ],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa.html"
+      ],
+      "source_note": "Page title Super visa for parents and grandparents, read 2026-11-16 (cached copy dated 2026-11-11).",
+      "sort_order": 1070,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-study-permit",
+      "kind": "program",
+      "canonical_name": "Study permit",
+      "ircc_aliases": [],
+      "common_variants": [
+        "student visa",
+        "student permit"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "TR-STUDY"
+      ],
+      "note": "Student visa is common usage, but IRCC issues a study permit, so a letter that says student visa may be soft flagged.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1080,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-international-student-program",
+      "kind": "program",
+      "canonical_name": "International Student Program",
+      "ircc_aliases": [],
+      "common_variants": [
+        "isp"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "TR-STUDY",
+        "TR-PGWP"
+      ],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/committees/cimm-apr-20-2026/oag-report.html"
+      ],
+      "source_note": "CIMM briefing dated 2026-08-18, read 2026-11-16.",
+      "sort_order": 1090,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-sds",
+      "kind": "program",
+      "canonical_name": "Student Direct Stream",
+      "ircc_aliases": [],
+      "common_variants": [],
+      "status": "former",
+      "replaced_by": "prog-study-permit",
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "TR-STUDY"
+      ],
+      "note": "Ended 2024-11-08 at 2 p.m. ET. Later applications are regular study permits. SDS is left out as an alias, since a former name matches anywhere and SDS also means a safety data sheet.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/end-student-direct-stream-nigeria-student-express.html"
+      ],
+      "source_note": "Notice dated 2024-11-08, read 2026-11-16.",
+      "sort_order": 1100,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-nse",
+      "kind": "program",
+      "canonical_name": "Nigeria Student Express",
+      "ircc_aliases": [],
+      "common_variants": [],
+      "status": "former",
+      "replaced_by": "prog-study-permit",
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "TR-STUDY"
+      ],
+      "note": "Ended 2024-11-08 with the SDS. NSE is left out as an alias, since a former name matches anywhere and NSE is also the National Stock Exchange of India, a common employer in a work history.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/end-student-direct-stream-nigeria-student-express.html"
+      ],
+      "source_note": "Notice dated 2024-11-08, read 2026-11-16.",
+      "sort_order": 1110,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-fmcsp",
+      "kind": "program",
+      "canonical_name": "Francophone Minority Communities Student Pilot",
+      "ircc_aliases": [
+        "francophone minority community student pilot",
+        "francophone minority student pilot",
+        "fmcsp",
+        "fmscp"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "TR-STUDY"
+      ],
+      "note": "IRCC spells it several ways on one page, abbreviations included. The canonical form is the one in the finalized logic model line.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/committees/cimm-apr-20-2026/overview-management-response-action-plan.html"
+      ],
+      "source_note": "Dated 2026-08-18, read 2026-11-16.",
+      "sort_order": 1120,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-employer-specific-wp",
+      "kind": "program",
+      "canonical_name": "Employer-specific work permit",
+      "ircc_aliases": [
+        "employer-specific work permits",
+        "closed work permit"
+      ],
+      "common_variants": [
+        "lmia-based work permit",
+        "lmia-exempt work permit",
+        "employer specific work permit"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "TR-WP-EMP"
+      ],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/employer-specific.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2026/temporary-workers.html"
+      ],
+      "source_note": "Read 2026-11-16. Closed appears in the 2026 binder in brackets.",
+      "sort_order": 1130,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-open-wp",
+      "kind": "program",
+      "canonical_name": "Open work permit",
+      "ircc_aliases": [
+        "open work permits"
+      ],
+      "common_variants": [
+        "owp",
+        "spousal open work permit",
+        "sowp",
+        "bridging open work permit",
+        "bowp"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "TR-WP-OPEN",
+        "TR-PGWP"
+      ],
+      "note": "The page lists post-graduation work permit applicants among those who may get an open work permit.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/open-work-permit.html"
+      ],
+      "source_note": "Read 2026-11-16 (cached copy dated 2026-11-09), page modified 2026-03-31.",
+      "sort_order": 1140,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-pgwp",
+      "kind": "program",
+      "canonical_name": "Post-graduation work permit (PGWP)",
+      "ircc_aliases": [
+        "post-graduation work permit",
+        "post-graduation work permits",
+        "pgwp"
+      ],
+      "common_variants": [
+        "post graduation work permit",
+        "post-graduation work permit program",
+        "pgwpp"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "TR-PGWP"
+      ],
+      "note": "The IRCC pages read call it a work permit, not a program, and the 2026 binder lists PGWPs under the International Mobility Program.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2026/temporary-workers.html"
+      ],
+      "source_note": "PGWP page modified 2026-03-09, read 2026-11-16.",
+      "sort_order": 1150,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-tfwp",
+      "kind": "program",
+      "canonical_name": "Temporary Foreign Worker Program",
+      "ircc_aliases": [
+        "tfwp"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "TR-WP-EMP"
+      ],
+      "note": "Co-managed with ESDC. Every TFWP permit is employer-specific and needs an LMIA.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2026/temporary-workers.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/annual-report-parliament-immigration-2026.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1160,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-imp",
+      "kind": "program",
+      "canonical_name": "International Mobility Program",
+      "ircc_aliases": [
+        "imp"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "TR-WP-EMP",
+        "TR-WP-OPEN",
+        "TR-PGWP"
+      ],
+      "note": "LMIA-exempt work permits, PGWPs and spousal open work permits included.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2026/temporary-workers.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/annual-report-parliament-immigration-2026.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1170,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-imp-plus",
+      "kind": "program",
+      "canonical_name": "International Mobility Program Plus",
+      "ircc_aliases": [
+        "imp+"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "TR-WP-OPEN"
+      ],
+      "note": "Open work permit for Quebec Selection Certificate holders outside Quebec.",
+      "source_urls": [
+        "https://ircc.canada.ca/explore-programs/"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1180,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-global-talent-stream",
+      "kind": "program",
+      "canonical_name": "Global Talent Stream",
+      "ircc_aliases": [
+        "gts"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "TR-WP-EMP"
+      ],
+      "note": "A TFWP stream.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2026/temporary-workers.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1190,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-sawp",
+      "kind": "program",
+      "canonical_name": "Seasonal Agricultural Worker Program",
+      "ircc_aliases": [
+        "sawp"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "TR-WP-EMP"
+      ],
+      "note": "A TFWP stream.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2026/temporary-workers.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1200,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-global-skills-strategy",
+      "kind": "program",
+      "canonical_name": "Global Skills Strategy",
+      "ircc_aliases": [],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "TR-WP-EMP"
+      ],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/employer-specific.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1210,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-iec",
+      "kind": "program",
+      "canonical_name": "International Experience Canada",
+      "ircc_aliases": [
+        "iec"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "TR-WP-EMP",
+        "TR-WP-OPEN"
+      ],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/employer-specific.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1220,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-lmia",
+      "kind": "program",
+      "canonical_name": "Labour Market Impact Assessment (LMIA)",
+      "ircc_aliases": [
+        "labour market impact assessment",
+        "lmia"
+      ],
+      "common_variants": [
+        "labor market impact assessment"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "ESDC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "TR-WP-EMP"
+      ],
+      "note": "A document, not a program. Listed so a letter that names it is not flagged.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/annual-report-parliament-immigration-2026.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2026/temporary-workers.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1230,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-express-entry",
+      "kind": "program",
+      "canonical_name": "Express Entry",
+      "ircc_aliases": [],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "PR-EE-CEC",
+        "PR-EE-FSW",
+        "PR-EE-FST",
+        "PR-PNP-EE"
+      ],
+      "note": "The application system for the three federal programs and part of the PNP. EE is left out, since it is too short to match alone.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1240,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-cec",
+      "kind": "program",
+      "canonical_name": "Canadian Experience Class",
+      "ircc_aliases": [
+        "cec"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "PR-EE-CEC"
+      ],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1250,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-fswp",
+      "kind": "program",
+      "canonical_name": "Federal Skilled Worker Program",
+      "ircc_aliases": [],
+      "common_variants": [
+        "fswp",
+        "fsw",
+        "federal skilled worker",
+        "federal skilled workers program"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "PR-EE-FSW"
+      ],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices.html"
+      ],
+      "source_note": "Read 2026-11-16 (cached copy dated 2026-11-14).",
+      "sort_order": 1260,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-fstp",
+      "kind": "program",
+      "canonical_name": "Federal Skilled Trades Program",
+      "ircc_aliases": [],
+      "common_variants": [
+        "fstp",
+        "fst",
+        "federal skilled trades"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "PR-EE-FST"
+      ],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-trades.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices.html"
+      ],
+      "source_note": "Read 2026-11-16 (cached copy dated 2026-11-14).",
+      "sort_order": 1270,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-pnp",
+      "kind": "program",
+      "canonical_name": "Provincial Nominee Program",
+      "ircc_aliases": [
+        "pnp",
+        "provincial nominee program: express entry process",
+        "provincial nominee program: non-express entry process",
+        "non-express entry"
+      ],
+      "common_variants": [
+        "provincial nominee programme",
+        "enhanced pnp",
+        "base pnp",
+        "enhanced nomination",
+        "base nomination",
+        "provincial nomination"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "PR-PNP-EE",
+        "PR-PNP-BASE"
+      ],
+      "note": "IRCC names the two routes by process (Express Entry and non-Express Entry). Enhanced and base are practitioner terms. Each province names its own streams, which are not in this file. Non-Express Entry is a phrase of this row, so the longer match keeps the Express Entry inside it from reading as the Express Entry row.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/express-entry.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/non-express-entry.html"
+      ],
+      "source_note": "Read 2026-11-16 (cached copies dated 2026-11-14).",
+      "sort_order": 1280,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-family-class",
+      "kind": "program",
+      "canonical_name": "Family Class",
+      "ircc_aliases": [],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "FAM-SPOUSE",
+        "FAM-PGP",
+        "FAM-OTHER"
+      ],
+      "note": "IRPR 116. Sponsorship of a person outside Canada, the class with an IAD appeal right.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides/guide-5289-sponsor-your-spouse-common-law-partner-conjugal-partner-dependent-child-complete-guide.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2026/family-reunification.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1290,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-spouse-in-canada-class",
+      "kind": "program",
+      "canonical_name": "Spouse or Common-Law Partner in Canada Class",
+      "ircc_aliases": [],
+      "common_variants": [
+        "spouse or common law partner in canada class",
+        "inland spousal sponsorship"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "FAM-SPOUSE"
+      ],
+      "note": "IRPR 123. IRCC capitalizes it differently across pages (in-Canada, in Canada).",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides/guide-5289-sponsor-your-spouse-common-law-partner-conjugal-partner-dependent-child-complete-guide.html"
+      ],
+      "source_note": "Guide IMM 5289, read 2026-11-16.",
+      "sort_order": 1300,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-spouse-sponsorship",
+      "kind": "program",
+      "canonical_name": "Sponsor your spouse, partner or child",
+      "ircc_aliases": [],
+      "common_variants": [
+        "spousal sponsorship",
+        "spouse sponsorship",
+        "partner sponsorship",
+        "spousal sponsorship program",
+        "dependent child sponsorship"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "FAM-SPOUSE"
+      ],
+      "note": "IRCC gives this no proper-noun program name. The page calls it a program to sponsor a spouse, common-law partner, conjugal partner or dependent child.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/spouse-partner-children.html"
+      ],
+      "source_note": "Read 2026-11-16 (cached copy dated 2026-11-08).",
+      "sort_order": 1310,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-pgp",
+      "kind": "program",
+      "canonical_name": "Parents and Grandparents Program",
+      "ircc_aliases": [
+        "pgp",
+        "pgp program",
+        "parents and grandparents (pgp) program"
+      ],
+      "common_variants": [
+        "parent and grandparent program",
+        "parents and grandparents sponsorship"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "FAM-PGP"
+      ],
+      "note": "Intake paused since 2026-07-15. A letter that says the sponsor was invited after that date is a fact for the RCIC to check.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/responsibly-manage-parent-grandparent-program.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/sponsor-parents-grandparents.html"
+      ],
+      "source_note": "Notice dated 2026-07-15, read 2026-11-16.",
+      "sort_order": 1320,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-other-relatives",
+      "kind": "program",
+      "canonical_name": "Sponsor your relatives",
+      "ircc_aliases": [
+        "sponsor your other relatives"
+      ],
+      "common_variants": [
+        "other relatives sponsorship",
+        "orphaned relative sponsorship",
+        "lonely canadian"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "FAM-OTHER"
+      ],
+      "note": "No proper-noun program name. Lonely Canadian is practitioner shorthand for the IRPR 117(1)(h) case, not IRCC wording.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/other-relatives.html",
+        "https://ircc.canada.ca/explore-programs/"
+      ],
+      "source_note": "Read 2026-11-16 (cached copy dated 2026-11-14).",
+      "sort_order": 1330,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-in-canada-asylum",
+      "kind": "program",
+      "canonical_name": "In-Canada Asylum Program",
+      "ircc_aliases": [
+        "claim for refugee protection",
+        "refugee protection claim",
+        "claiming asylum from within canada"
+      ],
+      "common_variants": [
+        "asylum claim",
+        "refugee claim",
+        "in canada asylum program"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "REF-CLAIM"
+      ],
+      "note": "IRCC changes the asylum application from 2026-11-03. The Refugee Protection Division of the IRB decides the claim.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/asylum/in-canada.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2026/refugee-resettlement-complementary-pathways.html",
+        "https://irb-cisr.gc.ca/en/board/pages/index.aspx"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1340,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-refugee-resettlement",
+      "kind": "program",
+      "canonical_name": "Refugee Resettlement Program",
+      "ircc_aliases": [
+        "refugee and humanitarian resettlement program",
+        "resettlement program"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "REF-RESETTLE"
+      ],
+      "note": "IRCC uses Refugee Resettlement Program (2026 binder) and Refugee and Humanitarian Resettlement Program (How Canada's refugee system works). Both are accepted.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2026/refugee-resettlement-complementary-pathways.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/refugees/about-refugee-system/how-system-works.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1350,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-gar",
+      "kind": "program",
+      "canonical_name": "Government-Assisted Refugees program",
+      "ircc_aliases": [
+        "government-assisted refugee program",
+        "government-assisted refugees",
+        "gar program",
+        "gar"
+      ],
+      "common_variants": [
+        "government assisted refugees program"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "REF-RESETTLE"
+      ],
+      "note": "IRCC writes it singular (Government-Assisted Refugee Program) in the operational manual and plural on the applicant page. Referral only.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/refugees/resettle-refugee/government-assisted-refugee-program.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/refugee-protection/resettlement.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1360,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-psr",
+      "kind": "program",
+      "canonical_name": "Private Sponsorship of Refugees Program",
+      "ircc_aliases": [
+        "private sponsorship of refugees",
+        "privately sponsored refugees",
+        "psr program",
+        "psr"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "REF-RESETTLE"
+      ],
+      "note": "Sponsor types are Sponsorship Agreement Holders, Groups of Five and Community Sponsors. Groups of Five and Community Sponsors are paused.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/refugees/sponsor-refugee/private-sponsorship-program.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2026/refugee-resettlement-complementary-pathways.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1370,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-bvor",
+      "kind": "program",
+      "canonical_name": "Blended Visa Office-Referred Program",
+      "ircc_aliases": [
+        "blended visa office-referred",
+        "blended visa office referral",
+        "bvor program",
+        "bvor"
+      ],
+      "common_variants": [
+        "blended visa office referred program"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "REF-RESETTLE"
+      ],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/refugees/sponsor-refugee/private-sponsorship-program/blended-visa-office-program.html",
+        "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=770&top=11",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/refugee-protection/resettlement.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1380,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-jas",
+      "kind": "program",
+      "canonical_name": "Joint Assistance Sponsorship Program",
+      "ircc_aliases": [
+        "joint assistance sponsorship",
+        "jas"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "REF-RESETTLE"
+      ],
+      "note": null,
+      "source_urls": [
+        "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=095&top=11",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/refugee-protection/resettlement.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1390,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-rap",
+      "kind": "program",
+      "canonical_name": "Resettlement Assistance Program",
+      "ircc_aliases": [],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "REF-RESETTLE"
+      ],
+      "note": "Income support for resettled refugees. RAP is left out as an alias, since it collides with ordinary text.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/refugees/about-refugee-system/how-system-works.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1400,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-ifhp",
+      "kind": "program",
+      "canonical_name": "Interim Federal Health Program",
+      "ircc_aliases": [
+        "ifhp"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "REF-RESETTLE",
+        "REF-CLAIM"
+      ],
+      "note": null,
+      "source_urls": [
+        "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=769&top=11"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1410,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-empp",
+      "kind": "program",
+      "canonical_name": "Economic Mobility Pathways Pilot",
+      "ircc_aliases": [
+        "empp"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [],
+      "note": "Economic pathway for skilled refugees, outside the 17 codes.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/transition-binders/deputy-minister-2026/refugee-resettlement-complementary-pathways.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1420,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-hc",
+      "kind": "program",
+      "canonical_name": "Humanitarian and compassionate considerations",
+      "ircc_aliases": [
+        "humanitarian and compassionate",
+        "h&c"
+      ],
+      "common_variants": [
+        "humanitarian and compassionate grounds",
+        "h and c",
+        "h&c application"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [
+        "HC-PR"
+      ],
+      "note": null,
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides/humanitarian-compassionate-considerations.html"
+      ],
+      "source_note": "Read 2026-11-16 (cached copy dated 2026-11-11).",
+      "sort_order": 1430,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-aip",
+      "kind": "program",
+      "canonical_name": "Atlantic Immigration Program",
+      "ircc_aliases": [
+        "aip"
+      ],
+      "common_variants": [],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [],
+      "note": "Outside the 17 codes. In force 2022-01-01.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/atlantic-immigration.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1440,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-aipp",
+      "kind": "program",
+      "canonical_name": "Atlantic Immigration Pilot Program",
+      "ircc_aliases": [
+        "atlantic immigration pilot",
+        "aipp"
+      ],
+      "common_variants": [],
+      "status": "former",
+      "replaced_by": "prog-aip",
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [],
+      "note": "Closed 2021-12-31, last applications 2022-03-05.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/updates/2022-atlantic-immigration-program.html"
+      ],
+      "source_note": "Update dated 2022-04-07, read 2026-11-16.",
+      "sort_order": 1450,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-start-up-visa",
+      "kind": "program",
+      "canonical_name": "Start-up Visa Program",
+      "ircc_aliases": [
+        "start-up visa"
+      ],
+      "common_variants": [
+        "startup visa"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [],
+      "note": "Outside the 17 codes. IRCC stopped new applications at 11:59 p.m. on 2025-12-31, except from applicants with a valid 2025 commitment from a designated organization, and plans a new entrepreneur pilot. Kept current while those applications are processed.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/immigration-measures-entrepreneurs.html"
+      ],
+      "source_note": "Notice dated 2025-12-19, read 2026-11-16.",
+      "sort_order": 1460,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-self-employed",
+      "kind": "program",
+      "canonical_name": "Self-Employed Persons Program",
+      "ircc_aliases": [],
+      "common_variants": [
+        "self employed persons program"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [],
+      "note": "Outside the 17 codes.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices.html"
+      ],
+      "source_note": "Read 2026-11-16.",
+      "sort_order": 1470,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-hcwip",
+      "kind": "program",
+      "canonical_name": "Home Care Worker Immigration Pilots",
+      "ircc_aliases": [],
+      "common_variants": [
+        "home care worker immigration pilot",
+        "home care worker pilots",
+        "home care worker pilot"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [],
+      "note": "Outside the 17 codes. PR for home child care providers and home support workers, listed on the explore programs page.",
+      "source_urls": [
+        "https://ircc.canada.ca/explore-programs/",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/caregivers/home-care-worker-immigration-pilots/child-care-home-support/eligibility.html"
+      ],
+      "source_note": "Explore programs page modified 2026-09-08, read 2026-11-16.",
+      "sort_order": 1480,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-caring-pathways",
+      "kind": "program",
+      "canonical_name": "Caring for Children and Caring for People with High Medical Needs pathways",
+      "ircc_aliases": [
+        "caring for children pathway",
+        "caring for people with high medical needs pathway",
+        "caring for children program",
+        "caring for people with high medical needs program"
+      ],
+      "common_variants": [],
+      "status": "former",
+      "replaced_by": "prog-hcwip",
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [],
+      "note": "Both programs ended on 2019-06-18, and IRCC still processes complete applications sent before then (CPC Edmonton). The IRCC pages point to the 2019 Home Child Care Provider and Home Support Worker pilots, which the 2026 explore programs page no longer lists. replaced_by is the caregiver pathway that page lists.",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/caregivers/children.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/caregivers/people-high-medical-needs.html",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices.html",
+        "https://ircc.canada.ca/explore-programs/"
+      ],
+      "source_note": "Caregiver pages modified 2023-09-25, explore programs page modified 2026-09-08, read 2026-11-16.",
+      "sort_order": 1490,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-rcip",
+      "kind": "program",
+      "canonical_name": "Rural Community Immigration Pilot",
+      "ircc_aliases": [
+        "rural community immigration class"
+      ],
+      "common_variants": [
+        "rcip",
+        "rural community immigration pilots"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [],
+      "note": "Outside the 17 codes. PR for skilled workers in certain smaller communities. The IRPR amendment in force 2026-10-23 prescribes it as the rural community immigration class (IRPR 87.4 to 87.46), so the class name is an alias.",
+      "source_urls": [
+        "https://ircc.canada.ca/explore-programs/",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/rural-immigration/eligibility.html",
+        "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-87.4.html"
+      ],
+      "source_note": "Explore programs page modified 2026-09-08, read 2026-11-16. IRPR 87.4(1), consolidation current to 2026-10-29, read 2026-11-19 (found by the first X-37 law check).",
+      "sort_order": 1500,
+      "last_verified": "2026-11-16"
+    },
+    {
+      "id": "prog-fcip",
+      "kind": "program",
+      "canonical_name": "Francophone Community Immigration Pilot",
+      "ircc_aliases": [],
+      "common_variants": [
+        "fcip",
+        "francophone community immigration pilots"
+      ],
+      "status": "current",
+      "replaced_by": null,
+      "successor_note": null,
+      "organization": "IRCC",
+      "letter_addressee": "n/a",
+      "visa_codes": [],
+      "note": "Outside the 17 codes. PR for skilled French-speaking workers in certain smaller Francophone minority communities.",
+      "source_urls": [
+        "https://ircc.canada.ca/explore-programs/",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/franco-immigration/eligibility.html"
+      ],
+      "source_note": "Explore programs page modified 2026-09-08, read 2026-11-16.",
+      "sort_order": 1510,
+      "last_verified": "2026-11-16"
+    }
+  ]
+}

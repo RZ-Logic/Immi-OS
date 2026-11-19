@@ -1,0 +1,10 @@
+{
+  "_confirmed": true,
+  "scenarios": {
+    "900001": {"name": "Batch Outbound Caller", "expected_label": "Batch Outbound Caller"},
+    "900002": {"name": "Application Approved - Auto-Celebrate", "expected_label": "Application Approved - Auto-Celebrate"},
+    "900003": {"name": "Lead Qualifier", "expected_label": "Lead Qualifier"},
+    "900004": {"name": "Pending Call Demo", "expected_label": "Pending Call Demo"},
+    "900005": {"name": "Customer Support Bot for existing clients", "expected_label": "Customer Support Bot for existing clients"}
+  }
+}

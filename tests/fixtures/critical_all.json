@@ -1,0 +1,15 @@
+{
+  "_comment": "Test rules: every module is critical, so check B behaves as in v1 (the full handler on every external-call module). The patterns match any module type.",
+  "decided": "2026-10-29",
+  "roles": {
+    "client_send": {"types": ["*"], "reason": "Test fixture, every module counts as critical."},
+    "money": {"types": ["stripe:*"], "reason": "Test fixture, Stripe is critical as in the real rules."},
+    "lead_status_write": {"reason": "Test fixture, a lead Status write is critical as in the real rules."},
+    "dispatch_field_write": {"reason": "Test fixture, a write of a dispatch field is critical as in the real rules."},
+    "f31_decision_row": {"reason": "Test fixture, the F-31 decision row is critical as in the real rules."},
+    "f31_fallback_row": {"reason": "Test fixture, the F-31 fallback rows are critical as in the real rules."},
+    "fetch_back_call_details": {"reason": "Test fixture, the call-details module is critical as in the real rules."},
+    "fetch_back_lookup": {"reason": "Test fixture, the gate lookup is critical as in the real rules."}
+  },
+  "overrides": []
+}

@@ -1,0 +1,21 @@
+# Secrets, anywhere in the tree. .env.example is the only env file tracked.
+.env
+.env.*
+*.env
+!/.env.example
+
+# Tabular exports can hold client data.
+*.csv
+*.tsv
+*.xlsx
+*.xls
+
+__pycache__/
+*.pyc
+
+# Cloudflare Worker build and local state. .dev.vars holds local secrets.
+node_modules/
+.dev.vars
+.dev.vars.*
+.wrangler/
+/worker/*/dist/

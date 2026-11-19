@@ -1,0 +1,22 @@
+{
+  "source": "synthetic test fixture",
+  "ledger_table_id": "tblf73Cdii3CsLKfL",
+  "fields": {
+    "fldFC0g1pzkgHOV3g": {
+      "role": "scenario label",
+      "type": "singleSelect",
+      "options": [
+        "Batch Outbound Caller",
+        "Application Approved - Auto-Celebrate",
+        "Customer Support Bot for existing clients",
+        "Lead Qualifier",
+        "Pending Call Demo"
+      ]
+    }
+  },
+  "lead_table": {
+    "table_id": "tblHk09sCKLcOJXr9",
+    "status_field_id": "fldFrKT1VdHwzYwrG",
+    "status_options": ["VIP", "Nurture", "Disqualified", "Pending Call", "Disqualified - Rejection Sent"]
+  }
+}

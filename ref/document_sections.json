@@ -1,0 +1,105 @@
+{
+  "source": "F-F13.2 required sections, in order, each one whole line of the draft compared case-blind after the validator's folding. SUBMISSION-LETTER is the structure the F-F10 draft prompt fixes (drafting-chain.submission-letter-draft@1 in ref/prompts.json, specs/F-F10-prompts.md, Structure). LOE and STUDY-PLAN have no rows until F-F10 v1.1 gives them a prompt with a fixed structure. Variants are added only when a measured draft (F-F14) uses one for the same section. No client data.",
+  "document_sections": [
+    {
+      "document_type": "SUBMISSION-LETTER",
+      "section": "Review line",
+      "ordinal": 1,
+      "part": "head",
+      "match_kind": "first_line",
+      "text": "Draft for review by RCIC {rcic}. Not for submission until the RCIC of record has reviewed and signed it.",
+      "variants": [],
+      "note": "The prompt's first line, exactly, with rcic_of_record in place of {rcic}. It marks every draft as unsigned work for the RCIC of record (X-16 option A) and names the RCIC the last line must repeat."
+    },
+    {
+      "document_type": "SUBMISSION-LETTER",
+      "section": "Re line",
+      "ordinal": 2,
+      "part": "head",
+      "match_kind": "prefix",
+      "text": "Re:",
+      "variants": [],
+      "note": "The prompt's Re line, which describes the application in words and ends with the applicant's full name. Only the prefix and some text after it are checked here. The applicant name rule checks the name."
+    },
+    {
+      "document_type": "SUBMISSION-LETTER",
+      "section": "Salutation",
+      "ordinal": 3,
+      "part": "head",
+      "match_kind": "line",
+      "text": "Dear Officer,",
+      "variants": [],
+      "note": "The prompt's salutation line. The letter is addressed to the processing officer, never to a named person or office."
+    },
+    {
+      "document_type": "SUBMISSION-LETTER",
+      "section": "Introduction",
+      "ordinal": 4,
+      "part": "body",
+      "match_kind": "heading",
+      "text": "Introduction",
+      "variants": [],
+      "note": "The prompt's first heading: who the applicant is and what the letter asks for."
+    },
+    {
+      "document_type": "SUBMISSION-LETTER",
+      "section": "Background",
+      "ordinal": 5,
+      "part": "body",
+      "match_kind": "heading",
+      "text": "Background",
+      "variants": [],
+      "note": "The prompt's second heading: the facts that matter to the grounds, in time order."
+    },
+    {
+      "document_type": "SUBMISSION-LETTER",
+      "section": "Legal framework",
+      "ordinal": 6,
+      "part": "body",
+      "match_kind": "heading",
+      "text": "Legal framework",
+      "variants": [],
+      "note": "The prompt's third heading: what each provision the letter relies on requires, each with its citation. Without it the citations are not explained."
+    },
+    {
+      "document_type": "SUBMISSION-LETTER",
+      "section": "Submissions",
+      "ordinal": 7,
+      "part": "body",
+      "match_kind": "heading",
+      "text": "Submissions",
+      "variants": ["Submission"],
+      "note": "The prompt's fourth heading: how the facts meet each requirement. The singular is the same section."
+    },
+    {
+      "document_type": "SUBMISSION-LETTER",
+      "section": "Conclusion",
+      "ordinal": 8,
+      "part": "body",
+      "match_kind": "heading",
+      "text": "Conclusion",
+      "variants": ["Conclusions"],
+      "note": "The prompt's fifth heading: the decision the letter asks the officer to make. The plural is the same section."
+    },
+    {
+      "document_type": "SUBMISSION-LETTER",
+      "section": "Closing",
+      "ordinal": 9,
+      "part": "close",
+      "match_kind": "line",
+      "text": "Respectfully submitted,",
+      "variants": [],
+      "note": "The prompt's closing line."
+    },
+    {
+      "document_type": "SUBMISSION-LETTER",
+      "section": "RCIC signature",
+      "ordinal": 10,
+      "part": "close",
+      "match_kind": "last_line",
+      "text": "{rcic}",
+      "variants": [],
+      "note": "The prompt's last line: rcic_of_record exactly as given, right after the closing, with nothing after it (no signature line, licence number, firm name, address or contact details). It must equal the RCIC the first line names."
+    }
+  ]
+}

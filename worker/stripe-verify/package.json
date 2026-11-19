@@ -1,0 +1,18 @@
+{
+  "name": "immios-stripe-verify",
+  "private": true,
+  "type": "module",
+  "description": "Verifies Stripe webhook signatures and forwards the event ID to the Immi-OS Make listener (F-H9, option A3).",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "smoke": "node test/workerd.smoke.js",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "stripe": "22.6.2"
+  },
+  "devDependencies": {
+    "wrangler": "4.151.0"
+  }
+}

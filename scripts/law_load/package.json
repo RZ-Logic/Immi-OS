@@ -1,0 +1,17 @@
+{
+  "name": "immios-law-load",
+  "private": true,
+  "type": "module",
+  "description": "Loads law/ into the Supabase law schema in one gated transaction and verifies access (X-17.1, X-37 reloads).",
+  "scripts": {
+    "check": "node load.mjs --check",
+    "load": "node load.mjs",
+    "verify": "node load.mjs --verify-only"
+  },
+  "dependencies": {
+    "pg": "8.23.1"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.9"
+  }
+}

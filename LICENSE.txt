@@ -1,0 +1,11 @@
+Copyright (c) 2026 Velocyt Consulting. All Rights Reserved.
+
+PROPRIETARY AND CONFIDENTIAL
+
+The architecture, system prompts, workflows, and documentation contained within this repository are the exclusive intellectual property of Velocyt Consulting. 
+
+This repository is provided strictly as a portfolio demonstration and high-level architectural overview. 
+
+You may not use, copy, reproduce, modify, distribute, publish, display, or create derivative works from this repository, in whole or in part, without the express prior written consent of Velocyt Consulting. 
+
+For commercial licensing, enterprise deployment, or demonstration requests, please contact Velocyt Consulting directly.
