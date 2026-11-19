@@ -1,6 +1,22 @@
-# 🍁 Immi-OS: Operations Automation for Canadian Immigration Consulting Firms
+<h1 align="center">🍁 Immi-OS</h1>
 
-*Immi-OS runs the operations of an immigration consulting practice: intake and voice screening, follow-up, policy monitoring and lead reactivation, client support, contracts, payment gating, submission drafting and interview preparation. The AI handles volume and first drafts. The licensed consultant (RCIC) keeps every legal judgment and every sign-off.*
+<p align="center">
+  <strong>Operations automation for Canadian immigration consulting firms:<br/>intake and voice screening, follow-up, policy monitoring and reactivation, client support, contracts,<br/>payment gating, submission drafting and interview preparation.<br/>The AI handles volume and first drafts. The licensed consultant (RCIC) keeps every legal judgment and every sign-off.</strong>
+</p>
+
+<p align="center">
+  <a href="#-current-state-november-2026">Current State</a> •
+  <a href="#-why-it-is-interesting">Why It Is Interesting</a> •
+  <a href="#-the-market">Market</a> •
+  <a href="#-one-clients-journey">Journey</a> •
+  <a href="#-business-impact-modelled">Impact</a> •
+  <a href="#-modules">Modules</a> •
+  <a href="#-engineering-properties">Engineering Properties</a> •
+  <a href="#-roadmap">Roadmap</a> •
+  <a href="#-technology-stack">Stack</a> •
+  <a href="#-what-is-in-this-repository">Repository</a> •
+  <a href="./prompt.md">Prompts</a>
+</p>
 
 ---
 
@@ -8,7 +24,7 @@
 
 ---
 
-## Current State (November 2026)
+## 📍 Current State (November 2026)
 
 Measured on the latest pull of the live Make account and stated plainly:
 
@@ -24,7 +40,7 @@ The figures below the line are the design target. Nothing in this README claims 
 
 ---
 
-## Why It Is Interesting
+## 💡 Why It Is Interesting
 
 - **The law is grounded, not recalled.** Every provision of IRPA and IRPR is indexed from the official Justice Canada XML into Postgres. The drafter gets the exact provision text it may cite, and a deterministic validator checks every citation in the draft against that index before anyone sees it.
 - **The AI never disqualifies anyone.** The voice screener can only sort a lead into VIP, Nurture, Call Later or Do Not Call. Disqualification is a manual decision by staff, and every automated status decision writes a trace with its evidence and the call ID.
@@ -34,7 +50,7 @@ The figures below the line are the design target. Nothing in this README claims 
 
 ---
 
-## Who This Is For
+## 👥 Who This Is For
 
 - Licensed Canadian immigration consultants (RCICs) and firms handling 50+ active files
 - Practices that screen, follow up and draft by hand and want those hours back
@@ -43,7 +59,7 @@ The figures below the line are the design target. Nothing in this README claims 
 
 ---
 
-## The Market
+## 🧭 The Market
 
 The market is contested. Several purpose-built RCIC platforms already ship AI-assisted intake, drafting help, CICC-aligned audit trails and Canadian data residency. Being early is not an edge.
 
@@ -55,7 +71,32 @@ Where it is behind: client records live in Airtable, so Canadian residency for c
 
 ---
 
-## Example: One Client's Journey (the designed path once activated)
+## 🔄 One Client's Journey
+
+```
+┌──────────────────────────────────────────────────────────────────────────┐
+│                                                                          │
+│   One lead, inquiry to approval (the designed path once activated):      │
+│                                                                          │
+│     INQUIRY            ← Gmail watch, Claude Haiku extracts the fields   │
+│       │                                                                  │
+│       ├─ VIP CALL      ← job offer or CRS 500+, called on the same run   │
+│       └─ SCREENER CALL ← every other lead, one dial per 15-minute run    │
+│       │                                                                  │
+│     OUTCOME            ← VIP, Nurture, Call Later or Do Not Call.        │
+│                          The AI never disqualifies anyone.               │
+│     RETAINER           ← staff set Send Contract, filled from a template │
+│     DRAFT              ← two Claude Opus stages, every citation checked  │
+│     RCIC SIGN-OFF      ← the licensed consultant reviews and decides     │
+│     PAYMENT GATE       ← Stripe invoice locks the file until it is paid  │
+│     MOCK INTERVIEW     ← Bland officer call, Opus scorecard to staff     │
+│     APPROVED           ← one HeyGen video, sent once the render is done  │
+│                                                                          │
+│   Every step writes a System Logs row. Every failure goes through the    │
+│   shared Logger: one Error row and one Slack alert carrying IDs only.    │
+│                                                                          │
+└──────────────────────────────────────────────────────────────────────────┘
+```
 
 1. **Inquiry:** A prospect emails the firm. Claude Haiku extracts the details into Airtable. A lead with a job offer or a CRS score of 500 or more is VIP.
 2. **Voice screening:** VIP leads get an instant email and a call from the Bland VIP agent on the same run. Other leads queue for the screener agent. The screener asks about the job offer and CRS score and ends in VIP, Nurture, Call Later or Do Not Call.
@@ -66,8 +107,6 @@ Where it is behind: client records live in Airtable, so Canadian residency for c
 7. **Interview prep:** A Bland voice agent plays a skeptical visa officer in a short pressure interview. Claude Opus grades the transcript into a risk scorecard for the consultant.
 8. **Approval:** When a file is marked Approved, Claude writes a short script and HeyGen renders a congratulation video from the consultant's avatar, emailed once the render completes.
 9. **Reactivation:** When a policy change lands, the Market Watchdog drafts a campaign. Once a person sets it Active, matching past leads get an email and, on a North American number, a call.
-
-Every step writes a row to the System Logs ledger. Every failure is logged and alerted through the shared Logger.
 
 ---
 
@@ -86,7 +125,7 @@ Modelled estimate for a single senior partner at full activation. It has not bee
 
 ---
 
-## 🏗️ Modules
+## 🧩 Modules
 
 Make.com orchestrates every scenario. Airtable is the system of record for client data. Postgres (Supabase, Canada Central) holds only non-client reference data: the law index, citation mappings, visa types, the prompt registry and the drafting validator's ledger.
 
@@ -127,6 +166,34 @@ Make.com orchestrates every scenario. Airtable is the system of record for clien
 
 ### ⚖️ Module F: Submission Drafting
 
+```
+┌──────────────────────────────────────────────────────────────────────────┐
+│                                                                          │
+│   Module F drafting chain:                                               │
+│                                                                          │
+│     CASE FACTS + VISA CODE + DOCUMENT TYPE                               │
+│       │                                                                  │
+│       ▼                                                                  │
+│     GROUNDING          ← Postgres returns mapped provisions, verbatim.   │
+│       │                  Production: RCIC-signed mappings only.          │
+│       ▼                                                                  │
+│     OUTLINE            ← Claude Opus, JSON schema: plan, risk flags,     │
+│       │                  weak grounds                                    │
+│       ▼                                                                  │
+│     DRAFT              ← Claude Opus, cites only the text it was given   │
+│       │                                                                  │
+│       ▼                                                                  │
+│     VALIDATOR          ← deterministic, every citation checked against   │
+│       │                  the IRPA and IRPR index and the grounding set   │
+│       ▼                                                                  │
+│     REVIEW TRAIL       ← Google Doc in a staff-only folder, review row   │
+│       │                  with verdict, flags and the document hash       │
+│       ▼                                                                  │
+│     DRAFT READY - PENDING REVIEW  ──►  the RCIC edits, signs or rejects  │
+│                                                                          │
+└──────────────────────────────────────────────────────────────────────────┘
+```
+
 - **Grounding first:** a Postgres function returns the provisions mapped to the client's visa type and document type, with their verbatim text. In production only RCIC-signed mappings count. Unreviewed candidate mappings are allowed only for records registered as synthetic tests.
 - **Two Claude Opus stages:** an outline stage returns a structured plan with risk flags and weak grounds, then a drafting stage writes the letter from the case facts and the provided text only. Opus uses adaptive thinking with a large output budget.
 - **Deterministic validation:** every citation in the draft is checked against the law index and against the provisions the drafter was given. The verdict, risk flags and a hash of the document are written to a review trail.
@@ -165,7 +232,7 @@ Three separate functions:
 
 ---
 
-## 🛡️ Engineering Properties
+## 🧱 Engineering Properties
 
 | Property | Implementation |
 |----------|---------------|
@@ -195,7 +262,7 @@ Immi-OS augments the consultant. Legal judgment, advice and sign-off stay with t
 
 ---
 
-## Technology Stack
+## 🔌 Technology Stack
 
 | Layer | Technology | Purpose |
 |-------|-----------|---------|
@@ -213,7 +280,7 @@ Immi-OS augments the consultant. Legal judgment, advice and sign-off stay with t
 
 ---
 
-## What Is in This Repository
+## 📁 What Is in This Repository
 
 This public copy carries the governance tooling and public reference data. The live scenario snapshots, the database migrations, the internal audit records and specs, and the client-facing prompts stay in the private repo of record.
 
