@@ -5,6 +5,16 @@
 </p>
 
 <p align="center">
+  <a href="./LICENSE.txt"><img src="https://img.shields.io/badge/License-Proprietary-555555?style=for-the-badge" alt="License: Proprietary"/></a>
+  <a href="https://www.make.com"><img src="https://img.shields.io/badge/Built_with-Make.com-6D00CC?style=for-the-badge&logo=make&logoColor=white" alt="Built with Make.com"/></a>
+  <a href="https://airtable.com"><img src="https://img.shields.io/badge/Client_Data-Airtable-18BFFF?style=for-the-badge&logo=airtable&logoColor=white" alt="Client data: Airtable"/></a>
+  <a href="https://supabase.com"><img src="https://img.shields.io/badge/Reference_Data-Supabase_Canada-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Reference data: Supabase, Canada"/></a>
+  <a href="https://www.anthropic.com"><img src="https://img.shields.io/badge/Models-Claude_Opus_%26_Haiku-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Models: Claude Opus and Haiku"/></a>
+  <img src="https://img.shields.io/badge/Legal_Sign--off-RCIC_Only-2A9D4A?style=for-the-badge" alt="Legal sign-off: RCIC only"/>
+  <img src="https://img.shields.io/badge/Status-Pre--activation-E07B00?style=for-the-badge" alt="Status: pre-activation"/>
+</p>
+
+<p align="center">
   <a href="#-current-state-november-2026">Current State</a> •
   <a href="#-why-it-is-interesting">Why It Is Interesting</a> •
   <a href="#-the-market">Market</a> •
